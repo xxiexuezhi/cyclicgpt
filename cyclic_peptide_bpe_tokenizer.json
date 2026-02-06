@@ -1,0 +1,7516 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "<pad>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "<s>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "</s>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "<unk>",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    }
+  ],
+  "normalizer": null,
+  "pre_tokenizer": {
+    "type": "Whitespace"
+  },
+  "post_processor": null,
+  "decoder": null,
+  "model": {
+    "type": "BPE",
+    "dropout": null,
+    "unk_token": "<unk>",
+    "continuing_subword_prefix": null,
+    "end_of_word_suffix": null,
+    "fuse_unk": false,
+    "byte_fallback": false,
+    "ignore_merges": false,
+    "vocab": {
+      "<pad>": 0,
+      "<s>": 1,
+      "</s>": 2,
+      "<unk>": 3,
+      "(": 4,
+      ")": 5,
+      "+": 6,
+      "-": 7,
+      "/": 8,
+      "1": 9,
+      "2": 10,
+      "3": 11,
+      "4": 12,
+      "5": 13,
+      "6": 14,
+      "=": 15,
+      "@": 16,
+      "B": 17,
+      "C": 18,
+      "F": 19,
+      "H": 20,
+      "N": 21,
+      "O": 22,
+      "S": 23,
+      "[": 24,
+      "\\": 25,
+      "]": 26,
+      "c": 27,
+      "l": 28,
+      "n": 29,
+      "o": 30,
+      "r": 31,
+      "s": 32,
+      "CC": 33,
+      "](": 34,
+      "cc": 35,
+      "(=": 36,
+      ")=": 37,
+      "@@": 38,
+      ")[": 39,
+      "([": 40,
+      "NC": 41,
+      "CCC": 42,
+      "c1": 43,
+      "cccc": 44,
+      "c2": 45,
+      "N2": 46,
+      "N1": 47,
+      "C1": 48,
+      "c1cccc": 49,
+      "c1ccccc1": 50,
+      "CCC2": 51,
+      "Cc1ccccc1": 52,
+      "Cc2": 53,
+      "ccccc2": 54,
+      "Cc2ccccc2": 55,
+      "c3": 56,
+      "2CCC": 57,
+      "2N": 58,
+      "2C": 59,
+      "CN": 60,
+      "N2C": 61,
+      "1C": 62,
+      "N1C": 63,
+      "2CCCN2C": 64,
+      "N2CCC": 65,
+      "]([": 66,
+      "OC": 67,
+      "CCC1": 68,
+      "CCCC": 69,
+      "N3": 70,
+      "Cc3": 71,
+      "ccccc3": 72,
+      ")(": 73,
+      "Cc3ccccc3": 74,
+      "1CC": 75,
+      "1N": 76,
+      "1NC": 77,
+      "CCC3": 78,
+      "N1CC": 79,
+      "NC1": 80,
+      "c1cc": 81,
+      "N2CC": 82,
+      "N1CCCCC1": 83,
+      "N2CCCCC2": 84,
+      "C2": 85,
+      "CCCN1C": 86,
+      "1CCCN1C": 87,
+      "cc1": 88,
+      "C1N": 89,
+      "3CCC": 90,
+      "3CCCN3": 91,
+      "3N": 92,
+      "c1ccc": 93,
+      "CC1": 94,
+      "N3CCC": 95,
+      "COC": 96,
+      "3CCCN3C": 97,
+      "3C": 98,
+      "ccc": 99,
+      "cc2": 100,
+      "C1C": 101,
+      "c1c": 102,
+      "CC2": 103,
+      "C1CC": 104,
+      "ccc1": 105,
+      "CN1C": 106,
+      "c4": 107,
+      "2CCCN2": 108,
+      "CCCCC": 109,
+      "Cc1ccc": 110,
+      "Cc2ccc": 111,
+      "1Cc1ccccc1": 112,
+      "CN1": 113,
+      "cccc1": 114,
+      "CC1CC": 115,
+      "ccccc1": 116,
+      "2NC": 117,
+      "Cl": 118,
+      "2CCCN2C1": 119,
+      "OCO": 120,
+      "Cc1cc": 121,
+      "CCO": 122,
+      "CCCOC": 123,
+      "CO": 124,
+      "Cc2cc": 125,
+      "c1ccccc1C": 126,
+      "NCC": 127,
+      "NC2": 128,
+      "c2ccccc2": 129,
+      "CNC": 130,
+      "2C1": 131,
+      "CC1CCCCC1": 132,
+      "N12": 133,
+      "OCC1": 134,
+      "CN1CC": 135,
+      "N1CCC2": 136,
+      "ccccc4": 137,
+      "1CCC2": 138,
+      "CCCCC2": 139,
+      "CC2CCCCC2": 140,
+      "CCCN": 141,
+      "Cc4": 142,
+      "CCN": 143,
+      "N1CCC": 144,
+      "Cc4ccccc4": 145,
+      "CCCCC3": 146,
+      "nH": 147,
+      "C1N2": 148,
+      "c2c": 149,
+      "O1": 150,
+      "ccc2": 151,
+      "CC3": 152,
+      "2N1CCC2": 153,
+      "C1CN": 154,
+      "CC1CCOCC1": 155,
+      "CN2C": 156,
+      "CCCC1": 157,
+      "n1": 158,
+      "12N": 159,
+      "12": 160,
+      "CN2CC": 161,
+      "12C": 162,
+      "CC2CCO": 163,
+      "CC2CCOCC2": 164,
+      "N12CCC": 165,
+      "N12C": 166,
+      "N3CCCCC3": 167,
+      "n2": 168,
+      "21": 169,
+      "cccc2": 170,
+      "Cc2cc3": 171,
+      "cc3": 172,
+      "CCOC": 173,
+      "cccc3": 174,
+      "2CC": 175,
+      "Cc2ccc3": 176,
+      "Cc1cc2": 177,
+      "Cc3ccc": 178,
+      "CCCCN": 179,
+      "2CC1": 180,
+      "C1N2C": 181,
+      ")([": 182,
+      "nc": 183,
+      "NCCCC": 184,
+      "N4": 185,
+      "2N1C": 186,
+      "C1CN2": 187,
+      ")(=": 188,
+      "C1CCN2C": 189,
+      "C1CN2C": 190,
+      "Cc1": 191,
+      "C1CCN2": 192,
+      "N2C1": 193,
+      "CS": 194,
+      "C1N2CCC": 195,
+      "CCC4": 196,
+      "c1cn": 197,
+      "CCN1CC": 198,
+      "OCO2": 199,
+      "N2CC1": 200,
+      "2CCCN21": 201,
+      "N1CCCC1": 202,
+      "c2ccc": 203,
+      "2CCCN12": 204,
+      "c3ccccc3": 205,
+      "nc1": 206,
+      "OCOc2": 207,
+      "OCOc3": 208,
+      "CCCNC": 209,
+      "OCO3": 210,
+      "CCCc1ccccc1": 211,
+      "CCc1ccccc1": 212,
+      "CN1Cc1ccccc1": 213,
+      "4C": 214,
+      "COCCC": 215,
+      "oc": 216,
+      "CCc2ccccc2": 217,
+      "C1CCN": 218,
+      "OC2": 219,
+      "Cc2cccc": 220,
+      "CCCCCC": 221,
+      "OCC": 222,
+      "3CCCN3C1": 223,
+      "CCCC2": 224,
+      "12CCC": 225,
+      "12CCCN1C": 226,
+      "Cc1c": 227,
+      "Cc2c": 228,
+      "CCCc2ccccc2": 229,
+      "2CCC1": 230,
+      "N2CCC1": 231,
+      "CC3CCCCC3": 232,
+      "12CCCN2C": 233,
+      "Cc2cc3c": 234,
+      "1CCCC": 235,
+      "Cc1cc2c": 236,
+      "CCN1CCOCC1": 237,
+      "N2CCCC2": 238,
+      "Cc1cccc": 239,
+      "c3c": 240,
+      "Cc2ccc3c": 241,
+      "Cc1ccc2c": 242,
+      "CCOCC3": 243,
+      "n3": 244,
+      "N21": 245,
+      "noc": 246,
+      "CCOc1ccccc1": 247,
+      "c2cn": 248,
+      "CCN2CC": 249,
+      "nc2": 250,
+      "CCCCC1": 251,
+      "N4CCC": 252,
+      "OCC2": 253,
+      "Cc3cc": 254,
+      "C1CCCC": 255,
+      "CCCCc1ccccc1": 256,
+      "4N": 257,
+      "3CCCN3C2": 258,
+      "CCCc1cn": 259,
+      "CCN2CCOCC2": 260,
+      "4CCCN": 261,
+      "sc": 262,
+      "c12": 263,
+      "C1O": 264,
+      "CCOc2ccccc2": 265,
+      "CC3CCOCC3": 266,
+      "CCCN1CC": 267,
+      "Cn1": 268,
+      "OCOc2c1": 269,
+      "CSC": 270,
+      "Cn2": 271,
+      "C1CCCN": 272,
+      "O1C": 273,
+      "CCCCc2ccccc2": 274,
+      "c2OCOc2c1": 275,
+      "c2ccccc2c1": 276,
+      "c2cc": 277,
+      "CSCC": 278,
+      "COCC": 279,
+      "1OC": 280,
+      "c1ccccc1CN1CC": 281,
+      "N1Cc1ccccc1": 282,
+      "Cc2cc3OCOc3": 283,
+      "Cc2cc3OCOc3cc2": 284,
+      "CCCc2cn": 285,
+      "c1ccccc1CN1C": 286,
+      "Cc1ccc2OCOc2c1": 287,
+      "4c": 288,
+      "c1cnccc1": 289,
+      "ccc3": 290,
+      "OCOc2cc1": 291,
+      "SC": 292,
+      "c1cccc2": 293,
+      "C1CCCCN1C": 294,
+      "NS": 295,
+      "c2cccc": 296,
+      "3C1": 297,
+      "c1cc2": 298,
+      "Cc2ccc3OCOc3": 299,
+      "Cc2ccc3OCOc3c2": 300,
+      "CCN1C": 301,
+      "OC1": 302,
+      "NCCCCCC": 303,
+      "1CCC3": 304,
+      "CN1CCC": 305,
+      "4CCCN4C": 306,
+      "Cc1cc2OCOc2cc1": 307,
+      "CCc1ccc": 308,
+      "CCCCNC": 309,
+      "3N1": 310,
+      "3N1CCC3": 311,
+      "CCCN2C": 312,
+      "NCCCCCCN": 313,
+      "on1": 314,
+      "1Cc1ccc": 315,
+      "3C2": 316,
+      "Cc1cc2ccccc2": 317,
+      "ccccc3c2": 318,
+      "Cc2ccc3ccccc3c2": 319,
+      "C3": 320,
+      "cccc4": 321,
+      "Cc2cc3ccccc3": 322,
+      "CCCCCc2ccc": 323,
+      "nccc2": 324,
+      "CCc2ccc": 325,
+      "Cc1ccc2ccccc2c1": 326,
+      "CCc1cccnc1": 327,
+      "Cc1cc2ccccc2cc1": 328,
+      "NCCC": 329,
+      "CCCc1cnn": 330,
+      "cccn1": 331,
+      "Cc1noc": 332,
+      "nn": 333,
+      "COCCN": 334,
+      "nccc1": 335,
+      "ncs": 336,
+      "CCc1cnccc1": 337,
+      "CCCN1CCCC1": 338,
+      "CCCc3ccccc3": 339,
+      "Cc2cc3ccccc3cc2": 340,
+      "CNC1": 341,
+      "CCSC": 342,
+      "Cn1cccn1": 343,
+      "c2nc": 344,
+      "Cn1nccc1": 345,
+      "Cc1cc3": 346,
+      "Cn2nccc2": 347,
+      "CCOCC": 348,
+      "4OCO": 349,
+      "CCc2cccnc2": 350,
+      "4OCOc4": 351,
+      "CCCN2CCCC2": 352,
+      "1COC": 353,
+      "cccn2": 354,
+      "Cn2cccn2": 355,
+      "ccc1C": 356,
+      "(/": 357,
+      "cs": 358,
+      "CCc2cn": 359,
+      "OCO4": 360,
+      "CCc2cnccc2": 361,
+      "4C2": 362,
+      "Cn3": 363,
+      "Cc3ccc4c": 364,
+      "CCC1C": 365,
+      "on2": 366,
+      "C1CCC": 367,
+      "CCCc2cnn": 368,
+      "Cc2noc": 369,
+      "3CCCN31": 370,
+      "Cc1c2ccccc2": 371,
+      "Br": 372,
+      "c5": 373,
+      "Cc1c2c": 374,
+      "scc": 375,
+      "4ccccc4": 376,
+      "Cc2c3c": 377,
+      "CCCC3": 378,
+      "13": 379,
+      "CCNC": 380,
+      "c1cc2c": 381,
+      "CCCCO": 382,
+      "4CCCN4C2": 383,
+      "31": 384,
+      "nccc3": 385,
+      "1CCCCC1": 386,
+      "c2cccc3": 387,
+      "o2": 388,
+      "CCCCc2cccc": 389,
+      "nnc": 390,
+      "N3CCCC3": 391,
+      "Cc3c": 392,
+      "Cc3cc4c": 393,
+      "Cc2c3ccccc3": 394,
+      "c3ccc": 395,
+      "Cc1cccc2": 396,
+      "c1c2c": 397,
+      "c3nc": 398,
+      "c12c": 399,
+      "NCCCCCCNC": 400,
+      ")/": 401,
+      "Cc2cccc3": 402,
+      "CCCCc2cc": 403,
+      "nc3": 404,
+      "CCCCCCNC": 405,
+      "scn1": 406,
+      "1CCC": 407,
+      "N3CCOCC3": 408,
+      "N13": 409,
+      "3CCCN13": 410,
+      "sc2": 411,
+      "1CCOCC1": 412,
+      "COCCO": 413,
+      "c2csc": 414,
+      "Cc1cscn1": 415,
+      "Cc2csc": 416,
+      "ncsc1": 417,
+      "NCC1": 418,
+      "CCN3CCOCC3": 419,
+      "CCCc3c": 420,
+      "C1CCCCC1": 421,
+      "(\\": 422,
+      "CCCCC4": 423,
+      "ccccc12": 424,
+      "CCOC1": 425,
+      "CCOc3ccccc3": 426,
+      "Cc2cscn2": 427,
+      "Cc1ccccc1Cn1nccc1": 428,
+      "c1ccc2c": 429,
+      "C1CO": 430,
+      "cc1C": 431,
+      "C1NC": 432,
+      "C1CCCCC1C": 433,
+      "Cc1cc3c": 434,
+      "OCCCN1C": 435,
+      "n4": 436,
+      "CCO1": 437,
+      "nn2": 438,
+      "o1": 439,
+      "CCCCCCN": 440,
+      "N3C": 441,
+      "CCOCC1": 442,
+      "Cc3ccc4OCOc4": 443,
+      "Cn3nccc3": 444,
+      "Cc3ccc4OCOc4c3": 445,
+      "OCCCN1CC": 446,
+      "Cc1ncsc1": 447,
+      "C1CCOCC1": 448,
+      "c4ccccc4": 449,
+      "CC4": 450,
+      "CN3C": 451,
+      "Cc3cc4ccccc4": 452,
+      "c2c1cccc2": 453,
+      "Cc2ncs": 454,
+      "CCCCc3ccccc3": 455,
+      "Cc3cc4OCOc4": 456,
+      "Cc2ncsc2": 457,
+      "Cc3cc4OCOc4cc3": 458,
+      "Cc1ccccc1Cn1cccn1": 459,
+      "ncc": 460,
+      "cccn3": 461,
+      "ccc1O": 462,
+      "Cc1ccc3c": 463,
+      "Cn3cccn3": 464,
+      "Cc1cnccc1": 465,
+      "Cc3cc4ccccc4cc3": 466,
+      "c4c": 467,
+      "CN1CC1CCOCC1": 468,
+      "cs2": 469,
+      "c2oc": 470,
+      "c3c2cccc3": 471,
+      "cn1": 472,
+      "CCS": 473,
+      "CCc3ccccc3": 474,
+      "3NC": 475,
+      "c2nnc": 476,
+      "C1CNC": 477,
+      "CN1CCCOC": 478,
+      "NCCCCC": 479,
+      "Oc1ccc": 480,
+      "Cc3cccc": 481,
+      "Cc1cccnc1": 482,
+      "CN1CCCCC": 483,
+      "O1CO": 484,
+      "C1COCCC1C": 485,
+      "Cc2cccnc2": 486,
+      "O1CCC": 487,
+      "Cc2cccc3c2cccc3": 488,
+      "CCCN2CC": 489,
+      "Cc2ccccc2Cn2nccc2": 490,
+      "N1CCOCC1": 491,
+      "NCCCCCCN1": 492,
+      "Cc2ccccc2Cn2cccn2": 493,
+      "ncc1": 494,
+      "Cc1c2ccccc2ccc1": 495,
+      "Cc1cccc2c1cccc2": 496,
+      "c2scc": 497,
+      "c3OCOc3": 498,
+      "c3OCOc3c1": 499,
+      "3CC": 500,
+      "c1c2": 501,
+      "o3": 502,
+      "cc2c": 503,
+      "COCCN2CCOCC2": 504,
+      "CN1CC1CCCCC1": 505,
+      "FC": 506,
+      "cn2": 507,
+      "ccccc5": 508,
+      "ccccc23": 509,
+      "c3cc": 510,
+      "CN3CC": 511,
+      "sc3": 512,
+      "NCCC1": 513,
+      "c3cccc": 514,
+      "Cc1ccc3OCOc3c1": 515,
+      "OCOc3cc1": 516,
+      "c5ccccc5": 517,
+      "Cc2c3ccccc3ccc2": 518,
+      "1Cc1cc": 519,
+      "nn3": 520,
+      "cc4": 521,
+      "c3scc": 522,
+      "CN1Cc1cc": 523,
+      "C1OCCC": 524,
+      "CCl": 525,
+      "CCN2C": 526,
+      "COCCN1CCOCC1": 527,
+      "cs3": 528,
+      "CC4CCCCC4": 529,
+      "Cc2nc": 530,
+      "c3ccccc3c1": 531,
+      "Cc2cnccc2": 532,
+      "c12ccc": 533,
+      "NCCCCCCNC1": 534,
+      "CCCNC1": 535,
+      "1CO": 536,
+      "CCC1CC": 537,
+      "Cc3noc": 538,
+      "1CC1CCCCC1": 539,
+      "1O": 540,
+      "onc": 541,
+      "c1c2ccccc2": 542,
+      "CCC2CC": 543,
+      "c2ccccc21": 544,
+      "Cc4ccc": 545,
+      "Cc3ccc4ccccc4": 546,
+      "Cc3ccc4ccccc4c3": 547,
+      "CCc3ccc": 548,
+      "cc1F": 549,
+      "NCCCCC1": 550,
+      "c12cc": 551,
+      "Cc5ccccc5": 552,
+      "NCCCC1": 553,
+      "on3": 554,
+      "c2ccccc12": 555,
+      "CCC1CCCC": 556,
+      "CCCCN2C": 557,
+      "N4CCCCC4": 558,
+      "CSc1ccccc1": 559,
+      "c1cnn": 560,
+      "Cc1cc3OCOc3cc1": 561,
+      "CCCc3cnn": 562,
+      "CCCN3C": 563,
+      "c1n": 564,
+      "CCC2CCCC": 565,
+      "C1NCC": 566,
+      "COCc1ccccc1": 567,
+      "COCc2ccccc2": 568,
+      "c3csc": 569,
+      "c12OCO": 570,
+      "Cc1cc3ccccc3": 571,
+      "CCc3cccnc3": 572,
+      "c3oc": 573,
+      "c3nnc": 574,
+      "1CS": 575,
+      "NCCCCCC1": 576,
+      "CCCc3cn": 577,
+      "CCCCCN1C": 578,
+      "CSc2ccccc2": 579,
+      "C1Oc2c": 580,
+      "oc1": 581,
+      "CCc3c": 582,
+      "N1CCCCC": 583,
+      "CCc3cnccc3": 584,
+      "Cc3c4ccccc4": 585,
+      "C1CCNC": 586,
+      "c1cc2ccccc2": 587,
+      "1CCCCN": 588,
+      "CCCCCN1CC": 589,
+      "CN1CCCC": 590,
+      "OCO1": 591,
+      "Cc1ccc3ccccc3c1": 592,
+      "Cc1nc": 593,
+      "Cc1cnc": 594,
+      "Cc1cc3ccccc3cc1": 595,
+      "/[": 596,
+      "Oc1ccccc1": 597,
+      "cn": 598,
+      "no1": 599,
+      "CCCN1": 600,
+      "c1nc": 601,
+      "ccccc21": 602,
+      "CSC1": 603,
+      "C1COCCC1CN1CC": 604,
+      "CNC2": 605,
+      "oc2": 606,
+      "CCc2c": 607,
+      "c1noc": 608,
+      "CCCCN1C": 609,
+      "](/": 610,
+      "1CCc1ccccc1": 611,
+      "N1CC1CCCCC1": 612,
+      "COc1ccccc1": 613,
+      "Cc1onc": 614,
+      "c3ccccc32": 615,
+      "nnn": 616,
+      "CCOCC4": 617,
+      "Cc1cccc2ccccc12": 618,
+      "C1COCCC1CN1C": 619,
+      "OCCN1CC": 620,
+      "s1": 621,
+      "N1CCCOC": 622,
+      "Cc3c4c": 623,
+      "Cc3csc": 624,
+      "C1CCCCC1CN1CC": 625,
+      "Cn4": 626,
+      "CCc1c": 627,
+      "cc2C": 628,
+      "CCCN3CCCC3": 629,
+      "CN1CCOCC1": 630,
+      "Cc4cc": 631,
+      "O1c2c": 632,
+      "Cc2cnc": 633,
+      "c1cc2OCOc2cc1": 634,
+      "O1COc2": 635,
+      "1CSCC": 636,
+      "1Cc2ccc": 637,
+      "co2": 638,
+      "sc1": 639,
+      "cccc1C": 640,
+      "c3ccccc23": 641,
+      "c12cccc": 642,
+      "Cc3cscn3": 643,
+      "CCCc1ccc": 644,
+      "CCCCN1CC": 645,
+      "CCCCCCCCC": 646,
+      "OCOc2cc": 647,
+      "Cc2cccc3ccccc23": 648,
+      "CCc2cccc": 649,
+      "ccc2c": 650,
+      "N2CCCC": 651,
+      "CCC2CCC": 652,
+      "c3cccc4": 653,
+      "N1CC1CCOCC1": 654,
+      "ccc12": 655,
+      "ccc1CN1C": 656,
+      "c4nc": 657,
+      "CCCCCc3ccc": 658,
+      "n1cc": 659,
+      "c3ccccc3c2": 660,
+      "C1CCCCC1CN1C": 661,
+      "-]": 662,
+      "nnc1": 663,
+      "CCCc1c": 664,
+      "Cc3cccc4": 665,
+      "1NCCCCCCNC": 666,
+      "COc2ccccc2": 667,
+      "CCc2ccccc2Cl": 668,
+      "COc2ccccc2Cl": 669,
+      "1CCCNC": 670,
+      "5c": 671,
+      "CCc1cccc": 672,
+      "c1cccc3": 673,
+      "CCCCc3cccc": 674,
+      "C1CCCCCN": 675,
+      "COc2cccc": 676,
+      "CN1CCN1CCOCC1": 677,
+      "cs1": 678,
+      "Cc1cccc2ccccc21": 679,
+      "C1COCCN1CC": 680,
+      "CC4CCOCC4": 681,
+      "Cc": 682,
+      "Fc1ccc": 683,
+      "cnc1": 684,
+      "ncc2": 685,
+      "c1OCO2": 686,
+      "1Cc1c": 687,
+      "Cc3ccccc3Cn3nccc3": 688,
+      "ccc1Cl": 689,
+      "Cc1ccncc1": 690,
+      "COc1cccc": 691,
+      "Cc2ccncc2": 692,
+      "Cc1c3c": 693,
+      "CCc1ccccc1Cl": 694,
+      "OCCN2CC": 695,
+      "c12ccccc2": 696,
+      "c1cc2cc": 697,
+      "Cc3c4ccccc4ccc3": 698,
+      "2CCCCN2C": 699,
+      "SC2": 700,
+      "occ": 701,
+      "CCN2CCC": 702,
+      "CCCc2ccc": 703,
+      "c1c2cc": 704,
+      "2NCCCCCCNC": 705,
+      "cccn4": 706,
+      "cc21": 707,
+      "Clc1ccc": 708,
+      "c1cncc": 709,
+      "c1cccc2cc": 710,
+      "Cn4cccn4": 711,
+      "CCc2": 712,
+      "CCN1CCC": 713,
+      "CCC5": 714,
+      "CCC1CCC": 715,
+      "CCCCc3cc": 716,
+      "cc12": 717,
+      "ccc4": 718,
+      "COc1cc": 719,
+      "COc2cc": 720,
+      "CCCCCCN1": 721,
+      "OCCN2C": 722,
+      "c1c2C": 723,
+      "c1cc2ccccc2cc1": 724,
+      "cnn": 725,
+      "CCc1cc": 726,
+      "c2nnc1": 727,
+      "1Cc1cc2c": 728,
+      "Cc3ccccc3Cn3cccn3": 729,
+      "ccc1CN1CC": 730,
+      "CN1Cc1ccc": 731,
+      "CN1CCCCc1ccccc1": 732,
+      "CN1CCOC": 733,
+      "c2coc": 734,
+      "ccc2O1": 735,
+      "n1c2": 736,
+      "CCCCCCNC1": 737,
+      "C1Oc2cc": 738,
+      "nnn1": 739,
+      "O1COc2ccc": 740,
+      "O1COc2cc": 741,
+      "1N2": 742,
+      "1N2CCC": 743,
+      "1c2oc": 744,
+      "@@](": 745,
+      "c12C": 746,
+      "N1CCCC": 747,
+      "Cc3ncs": 748,
+      "ccccc32": 749,
+      "ccc1OCO2": 750,
+      "CN1CCCc1ccccc1": 751,
+      "ccc2c1cccc2": 752,
+      "Cc1c3ccccc3": 753,
+      "Cc1nnn": 754,
+      "OCCN1C": 755,
+      "C1CCCCNC": 756,
+      "NCCCCCCNCC": 757,
+      "nnn2": 758,
+      "Cc2cccc3ccccc32": 759,
+      "c12OCOc1cc": 760,
+      "Cc3ncsc3": 761,
+      "N5": 762,
+      "o4": 763,
+      "CCNC1": 764,
+      "NC3": 765,
+      "CCCc2c": 766,
+      "c1F": 767,
+      "c1scc": 768,
+      "C1c2ccc": 769,
+      "C1CCCNC": 770,
+      "2CSC": 771,
+      "c1cccnc1": 772,
+      "cc2cc1": 773,
+      "cc2OCOc2c1": 774,
+      "cc2c1OCO2": 775,
+      "ccc2cc1": 776,
+      "ccc2ccc1": 777,
+      "ccc2OCOc2c1": 778,
+      "n1n": 779,
+      "CS3": 780,
+      "c1cccc2ccc": 781,
+      "cc1CN1CC": 782,
+      "c12OCOc1ccc": 783,
+      "-])=": 784,
+      "c2nnc1o2": 785,
+      "1c2nc": 786,
+      "1c2nnc": 787,
+      "O1CC": 788,
+      "CCc2cc": 789,
+      "N1CCCN1C": 790,
+      "C1CCCN1C": 791,
+      "C1CCCCN": 792,
+      "N1Cc1cc": 793,
+      "CCCCN2CC": 794,
+      "1NCCCCCCN": 795,
+      "c1ccc2cc": 796,
+      "c1ccncc": 797,
+      "cc2F": 798,
+      "cc2ccccc2": 799,
+      "cc2OC1": 800,
+      "CN1CCCN1C": 801,
+      "ccccc13": 802,
+      "O1c2ccc": 803,
+      "O1c2cc": 804,
+      "ccc2OC1": 805,
+      "Cc2cncc": 806,
+      "Cc1cccc3": 807,
+      "c12OCOc2cc": 808,
+      "C1OCCN": 809,
+      "NCCCCCCN2": 810,
+      "1Cc1ccc2ccccc2c1": 811,
+      "COc1ccccc1Cl": 812,
+      "O1COc2c1cc": 813,
+      "O1COc2c1ccc": 814,
+      "O1CCN": 815,
+      "c1ccncc1CC": 816,
+      "+]([": 817,
+      "1c": 818,
+      "1Cc2cccc": 819,
+      "OCc1ccccc1": 820,
+      "cnc2": 821,
+      "nccc4": 822,
+      "CCN1CCCCC1": 823,
+      "CCc1cn": 824,
+      "ccc2ccccc2c1": 825,
+      "c1nn": 826,
+      "c1sc2": 827,
+      "cccc5": 828,
+      "c1ccccc1CCCCN1C": 829,
+      "Cc1ccccc1CN1CC": 830,
+      "1Cc1": 831,
+      "1Cc1cccc": 832,
+      "CCCCN1": 833,
+      "CCCCNC1": 834,
+      "CCCCCC1": 835,
+      "c1ccc2ccccc2c1": 836,
+      "cc2O1": 837,
+      "ccc1F": 838,
+      "c4c3cccc4": 839,
+      "CN1CCCc1cnn": 840,
+      "Clc1cccc": 841,
+      "OCO5": 842,
+      "OCOc12": 843,
+      "COc1ccc": 844,
+      "COc2c": 845,
+      "ccc21": 846,
+      "NCCCCCCCCC": 847,
+      "NCCCCCCN1C": 848,
+      "C1Oc2ccc": 849,
+      "c1cccc2c1cc": 850,
+      "c1cc2OCOc2": 851,
+      "Cc3cnccc3": 852,
+      "cc1CN1C": 853,
+      "CCc2noc": 854,
+      "Cc1c3ccccc3ccc1": 855,
+      "5N": 856,
+      "NCCCN": 857,
+      "cnccc1": 858,
+      "cncc1": 859,
+      "oc3": 860,
+      "CCN1": 861,
+      "c1n2": 862,
+      "N1CCCCCCNC": 863,
+      "c1ccccc1CC": 864,
+      "c1ccccc1CCCN1C": 865,
+      "2Cc3ccc": 866,
+      "CNCCCCCCNC": 867,
+      "1C2": 868,
+      "1Cc1cc2ccccc2cc1": 869,
+      "ccccc34": 870,
+      "N1CCOC": 871,
+      "cc2c1cccc2": 872,
+      "N1CCCc1ccccc1": 873,
+      "CS2": 874,
+      "4C3": 875,
+      "4CCCN4": 876,
+      "c12nc": 877,
+      "COCCN1C": 878,
+      "c1cc2ccc": 879,
+      "o1c": 880,
+      "c1c2OCOc2cc": 881,
+      "CN1Cc1ccc2OCOc2c1": 882,
+      "c1c2ccccc2cc": 883,
+      "Cc4ccc5c": 884,
+      "cccc1Cl": 885,
+      "Cc3cccc4c3cccc4": 886,
+      "+](": 887,
+      "sc4": 888,
+      "CCCc4c": 889,
+      "c1c2ccc": 890,
+      "c2c1": 891,
+      "c2cc1": 892,
+      "c2ccc1": 893,
+      "c2occ": 894,
+      "c1ccccc1OCCN1CC": 895,
+      "c3c1cccc3": 896,
+      "1Cc1ccc2c": 897,
+      "C2SC": 898,
+      "C1NCCCCCCN": 899,
+      "cccn": 900,
+      "cccnc1": 901,
+      "cc2cccc1": 902,
+      "cc2OCO1": 903,
+      "CN1Cc1cc2OCOc2cc1": 904,
+      "COc1c": 905,
+      "COCc2cncc": 906,
+      "N1CCCN1CC": 907,
+      "Cc3cccnc3": 908,
+      "nc1C": 909,
+      "OCOc21": 910,
+      "c1cccc2c1": 911,
+      "C3SC": 912,
+      "CN1Cc1cc3": 913,
+      "c1c2ccccc2ccc1C": 914,
+      "Cc4cc5c": 915,
+      "C1COCCN1CCN1C": 916,
+      "+](=": 917,
+      "1c2ccccc2": 918,
+      "5C": 919,
+      "Cc1cn": 920,
+      "co3": 921,
+      "ncccc1": 922,
+      "nn1": 923,
+      "noc1": 924,
+      "CCc1cnn": 925,
+      "CCc1noc": 926,
+      "ccc2ccccc21": 927,
+      "c1c2cccc": 928,
+      "cccc2C": 929,
+      "cccc1CC": 930,
+      "c2c1ccc": 931,
+      "c2nc1": 932,
+      "c2oc1": 933,
+      "C1SC": 934,
+      "Cc2nnn": 935,
+      "2Cc3cccc": 936,
+      "c1ccn": 937,
+      "c1ccc2OCOc2c1": 938,
+      "c1ccnn": 939,
+      "N2CCOCC2": 940,
+      "COCc3ccccc3": 941,
+      "cc2ccccc21": 942,
+      "CN1Cc1cc2c": 943,
+      "CN1Cc1ccc2c": 944,
+      "cccc12": 945,
+      "CCOc4ccccc4": 946,
+      "NCCCCCCCN": 947,
+      "Cc1ncccc1": 948,
+      "Cn1cc": 949,
+      "Cn1ncc": 950,
+      "c1cccc2c": 951,
+      "c1c2OCOc2": 952,
+      "c1ncccc1CC": 953,
+      "c1cc2ccccc2cc1C": 954,
+      "cn1C": 955,
+      "cnn1C": 956,
+      "c1ccncc1CCN1C": 957,
+      "noc1CC": 958,
+      "c2oc1nn2": 959,
+      "2N1": 960,
+      "4CCOCC4": 961,
+      "5OCO": 962,
+      "Cc1cnn": 963,
+      "Nc2ccccc2": 964,
+      "SCC": 965,
+      "onc1": 966,
+      "CC5": 967,
+      "CCc1": 968,
+      "CCN1CCCC1": 969,
+      "CCCc3ccc": 970,
+      "CCCc4ccccc4": 971,
+      "C1SCC": 972,
+      "Cc2ccccc2CN2C": 973,
+      "c3ccccc13": 974,
+      "2NCCCCCCN": 975,
+      "1CN2": 976,
+      "1Cc1c2ccccc2": 977,
+      "N1Cc1c": 978,
+      "CCCC4": 979,
+      "CCCCCCCCCCNC": 980,
+      "CCCCc4ccccc4": 981,
+      "cc1OCO2": 982,
+      "COCc1cc": 983,
+      "COCc1cncc": 984,
+      "C1CSC": 985,
+      "c1cs": 986,
+      "ccc1OC": 987,
+      "CN1CCCC1": 988,
+      "Clc1cc": 989,
+      "CN1CCOc1ccccc1": 990,
+      "CCN4CCOCC4": 991,
+      "ccc2c1": 992,
+      "n1c": 993,
+      "n1cccc": 994,
+      "n1nc2": 995,
+      "cc3F": 996,
+      "CSc3ccccc3": 997,
+      "1CCCCNC": 998,
+      "c3coc": 999,
+      "c4ccccc4c3": 1000,
+      "ncc1CCCN1C": 1001,
+      "ncc1CCCN1CC": 1002,
+      "CN1Cc1ccc3c": 1003,
+      "c12OCOc2ccc": 1004,
+      "1CSc1ccccc1": 1005,
+      "Cn4nccc4": 1006,
+      "-])": 1007,
+      "C1COCCN1CCN1CC": 1008,
+      "c12ccccc2cc": 1009,
+      "CN1Cc1cc3OCOc3cc1": 1010,
+      "c1c2OCOc2ccc1CN1C": 1011,
+      "5OCOc5": 1012,
+      "Nc2ccccc2C": 1013,
+      "1CCC4": 1014,
+      "2c2scc": 1015,
+      "3CCCC": 1016,
+      "3c3nc": 1017,
+      "FC1": 1018,
+      "NCCCCN": 1019,
+      "OCCC": 1020,
+      "cnc": 1021,
+      "co4": 1022,
+      "n5": 1023,
+      "CCN2CCCCC2": 1024,
+      "CCCNC2": 1025,
+      "c1ncc": 1026,
+      "c1onc": 1027,
+      "c2cccc1": 1028,
+      "c1ccccc1OCCN1C": 1029,
+      "Cc2cc1": 1030,
+      "c3nc1": 1031,
+      "CNCCCCCCNC1": 1032,
+      "1Cc1c2c": 1033,
+      "N1Cc1cc2c": 1034,
+      "CCCCNC2": 1035,
+      "N3CCCC": 1036,
+      "1CCCCC": 1037,
+      "1CCSC": 1038,
+      "N1CCOc1ccccc1": 1039,
+      "1CCCN1C2": 1040,
+      "C1CCCCCNC": 1041,
+      "c4cc": 1042,
+      "c4scc": 1043,
+      "c4nnc": 1044,
+      "c4ccccc34": 1045,
+      "CN1CCCc1cn": 1046,
+      "COCCN1CC": 1047,
+      "Cc2cc4c": 1048,
+      "NCCNC": 1049,
+      "CN1CCc1cnccc1": 1050,
+      "ccccc43": 1051,
+      "Cc4c": 1052,
+      "c2csc1": 1053,
+      "ccc2OCOc12": 1054,
+      "n1oc": 1055,
+      "n1cccn1": 1056,
+      "NCCCCCCCCCCN": 1057,
+      "CS1": 1058,
+      "CCCCCCN2": 1059,
+      "c12nnc": 1060,
+      "c1cccc2c1cccc2": 1061,
+      "CN1CCCN1CCCC1": 1062,
+      "1Cc1cccnc1": 1063,
+      "cs4": 1064,
+      "C1CCCN1CCCN1C": 1065,
+      "c5nc": 1066,
+      "c4csc": 1067,
+      "1Cc1cc3": 1068,
+      "1COCCC": 1069,
+      "c12ccccc1cc": 1070,
+      "Cc3cccc4ccccc43": 1071,
+      "N5CCC": 1072,
+      "cc2ccccc2c1": 1073,
+      "cc2ccccc2cc1": 1074,
+      "c1cc2OCOc2cc1CN1C": 1075,
+      "4CCCN4C1": 1076,
+      "CCCc4cnn": 1077,
+      "1c2ccccc2c": 1078,
+      "c1c2cccc1C": 1079,
+      "c2nc1sc2": 1080,
+      "Cc2cc1ccc2": 1081,
+      ")\\": 1082,
+      "1cc": 1083,
+      "1c1ccccc1": 1084,
+      "1Cc2cc": 1085,
+      "1CCCc1ccccc1": 1086,
+      "2c2nc": 1087,
+      "2c3oc": 1088,
+      "41": 1089,
+      "CN2": 1090,
+      "Fc1cc": 1091,
+      "Fc1c": 1092,
+      "NCCCNC": 1093,
+      "cnc3": 1094,
+      "on4": 1095,
+      "ccc1cccc2": 1096,
+      "c1CN1C": 1097,
+      "c1Cn1cccn1": 1098,
+      "c1ncsc1": 1099,
+      "c21": 1100,
+      "c2c1cc": 1101,
+      "c1ccccc1CCCN1CC": 1102,
+      "Cc1ccccc1CN1C": 1103,
+      "Cc2c3ccc": 1104,
+      "Cc2c3cc": 1105,
+      "Cc2ccccc2CN2CC": 1106,
+      "c3oc2": 1107,
+      "2Cc3cc": 1108,
+      "N1Cc1cc2OCOc2cc1": 1109,
+      "ccccc31": 1110,
+      "N1CCN1CCOCC1": 1111,
+      "c1ccc2": 1112,
+      "c1cc2C": 1113,
+      "3CSC": 1114,
+      "cc2c1": 1115,
+      "cc2ccc1": 1116,
+      "cc2OCOc2cc1": 1117,
+      "cc2OCOc12": 1118,
+      "cc2OCOc21": 1119,
+      "C1CCCCCc2ccc": 1120,
+      "CN1Cc1c": 1121,
+      "CN1Cc1noc": 1122,
+      "CCCCC5": 1123,
+      "Cc2ccc4c": 1124,
+      "CN1CCO": 1125,
+      "N1CCCc1cn": 1126,
+      "ccc2ccccc12": 1127,
+      "ccc2OCO1": 1128,
+      "ccc2c1OCO2": 1129,
+      "n1nccc1": 1130,
+      "n1cccn": 1131,
+      "CN2CCOCC2": 1132,
+      "NCCCCCCCNC": 1133,
+      "CSCC1": 1134,
+      "CN1Cc1ccccc1Cn1nccc1": 1135,
+      "Cc2cn": 1136,
+      "c3csc1": 1137,
+      "SC3": 1138,
+      "c1cccc2c1ccc": 1139,
+      "NCCCCCCNC2": 1140,
+      "nn4": 1141,
+      "cc1Cl": 1142,
+      "o1c2": 1143,
+      "s1c2nc": 1144,
+      "c12ccccc2c": 1145,
+      "c12ccccc2ccc": 1146,
+      "Cc1cccc3ccccc31": 1147,
+      "NCCCCCCCCCN": 1148,
+      "c1cc2OCOc2cc1CN1CC": 1149,
+      "c1ccnn1Cc1ccccc1": 1150,
+      "c1ncccc1CCN1CC": 1151,
+      "CC5CCCCC5": 1152,
+      "c1cs2": 1153,
+      "3CCCCN3C": 1154,
+      "c3nc1sc3": 1155,
+      "c2csc1n2": 1156,
+      "c3oc2nn3": 1157,
+      "c3csc1n3": 1158,
+      "14": 1159,
+      "1CCCN": 1160,
+      "1c2scc": 1161,
+      "2c3nnc": 1162,
+      "3c3scc": 1163,
+      "4N1CCC": 1164,
+      "4CCCN1": 1165,
+      "4CCCC4": 1166,
+      "C4": 1167,
+      "CN2C1": 1168,
+      "Cn5": 1169,
+      "O2": 1170,
+      "OCc2ccccc2": 1171,
+      "co1": 1172,
+      "oc4": 1173,
+      "CCc4c": 1174,
+      "cc1CC": 1175,
+      "CCCN1CCCN1CC": 1176,
+      "c1sc": 1177,
+      "c1nnc": 1178,
+      "c1nn2": 1179,
+      "N1CCCCc1ccccc1": 1180,
+      "N1CCCCCCN": 1181,
+      "C1c2cc": 1182,
+      "C1c2nc": 1183,
+      "c1ccccc1CCCCN1CC": 1184,
+      "c3nnc1": 1185,
+      "c3occ": 1186,
+      "2CN2C": 1187,
+      "1CN2C": 1188,
+      "1Cc1cccc3": 1189,
+      "N1Cc1ccc2c": 1190,
+      "1NCCCCCCCCCCNC": 1191,
+      "cc1cccc2": 1192,
+      "c1csc": 1193,
+      "C1CCc2cccc": 1194,
+      "c4ccc": 1195,
+      "c4occ": 1196,
+      "CCCCCc": 1197,
+      "Cc2ccc4ccccc4": 1198,
+      "CN12": 1199,
+      "ccccc1Cn1nccc1": 1200,
+      "COCc2cc": 1201,
+      "Cc2cc4ccccc4": 1202,
+      "NCCN": 1203,
+      "NCCNC1": 1204,
+      "CN1CCc1cccnc1": 1205,
+      "CCCN4CCCC4": 1206,
+      "Cc4noc": 1207,
+      "ccc2OCOc21": 1208,
+      "cccc2ccc1": 1209,
+      "NCCCCCCCCN": 1210,
+      "NCCCCCCCCNC": 1211,
+      "Cc1c2cccc": 1212,
+      "c3ccccc31": 1213,
+      "Cc1ccccn1": 1214,
+      "c3cncc": 1215,
+      "c3coc1": 1216,
+      "C1CCCCc2ccc": 1217,
+      "sc5": 1218,
+      "c12CCCCCC": 1219,
+      "c2ccccc2c1C": 1220,
+      "N1Cc1ccccc1Cn1cccn1": 1221,
+      "c1cc2ccc1C": 1222,
+      "NCCCCCCNCC1": 1223,
+      "csc1": 1224,
+      "c5c": 1225,
+      "Cc3cnc": 1226,
+      "c12coc": 1227,
+      "1CCCN1": 1228,
+      "o1nc": 1229,
+      "NCCCCCN1": 1230,
+      "NCCCCCNC1": 1231,
+      "CN1Cc1ccc3OCOc3c1": 1232,
+      "c1c2ccccc2c": 1233,
+      "Cc1ncn": 1234,
+      "s1c2": 1235,
+      "c12ccccc1ccc": 1236,
+      "Cc3cccc4ccccc34": 1237,
+      "n1c2C": 1238,
+      "Cc1cccc3c1cccc3": 1239,
+      "c1ccncc1CCN1CC": 1240,
+      "1Cc1ncsc1": 1241,
+      "c1ccc2ccccc2c1C": 1242,
+      "n1nc2oc1": 1243,
+      "1Cc1cc3ccccc3": 1244,
+      "n1cccn1Cc1c": 1245,
+      "4N1CCC4": 1246,
+      "4CCCN14": 1247,
+      "CCc4cnccc4": 1248,
+      "c1scnc1C": 1249,
+      "c3nnc1o3": 1250,
+      "Cc2ccc4ccccc4c2": 1251,
+      "Cc2cc4ccccc4cc2": 1252,
+      "c3coc1n3": 1253,
+      "2Cc1ccccc1": 1254,
+      "2Cc2ccccc2": 1255,
+      "4C1": 1256,
+      "5CCCN": 1257,
+      "@](": 1258,
+      "OCCN1CCOCC1": 1259,
+      "S1C": 1260,
+      "S1CC": 1261,
+      "S1C2": 1262,
+      "cn3": 1263,
+      "nccc": 1264,
+      "CCN3CCC": 1265,
+      "CCNC2": 1266,
+      "CCc4ccccc4": 1267,
+      "CCCc5ccccc5": 1268,
+      "c1C": 1269,
+      "c1o2": 1270,
+      "c1oc2": 1271,
+      "C12": 1272,
+      "C1c2csc": 1273,
+      "C1SC2": 1274,
+      "c1ccccc1N": 1275,
+      "c3n": 1276,
+      "c3oc1": 1277,
+      "2NCCCCCCCCCCNC": 1278,
+      "CNCC1": 1279,
+      "1CNC": 1280,
+      "1COCC": 1281,
+      "1Cc1cccc2c1cccc2": 1282,
+      "N1Cc1ccc": 1283,
+      "N1Cc1noc": 1284,
+      "CCCCc": 1285,
+      "1CCNC": 1286,
+      "N1CCc1cccnc1": 1287,
+      "c1ccc2ccc": 1288,
+      "C1NCCC": 1289,
+      "C1NCCCCC": 1290,
+      "cc2ccccc12": 1291,
+      "ccc1CCCCCC": 1292,
+      "CCCCCNC": 1293,
+      "CCCCCc2cc": 1294,
+      "ccccc1CN1CC": 1295,
+      "ccccc1Cn1cccn1": 1296,
+      "c2ccccc2NC": 1297,
+      "Cc4c5ccccc5": 1298,
+      "N1CCCN1CCCC1": 1299,
+      "N1CCCc1cnn": 1300,
+      "Cc4ccccc4Cn4cccn4": 1301,
+      "n1c2oc": 1302,
+      "cccc2ccccc12": 1303,
+      "NCCCCNC": 1304,
+      "NCCCCCCCCCCNC": 1305,
+      "NCCCCCCCCN1": 1306,
+      "N4CCCC4": 1307,
+      "Cc1c2ccc": 1308,
+      "Cc1c2cc": 1309,
+      "CN1Cc1ccccc1Cn1cccn1": 1310,
+      "Cc2ccccn2": 1311,
+      "CCCCCCNCC": 1312,
+      "c12scc": 1313,
+      "COCCN3CCOCC3": 1314,
+      "c1cc2CCCCC": 1315,
+      "c1cc2CCCCCC": 1316,
+      "c1cc2ccc1CCCCCC": 1317,
+      "C3O": 1318,
+      "NCCCN1": 1319,
+      "cs5": 1320,
+      "C1CCCc2ccc": 1321,
+      "C1CCCN1CCCN1CC": 1322,
+      "c12csc": 1323,
+      "c4ccccc43": 1324,
+      "c2c1cccc2Br": 1325,
+      "c4coc": 1326,
+      "NCCCCCNC": 1327,
+      "Cc2ncn": 1328,
+      "Cc4ccc5OCOc5": 1329,
+      "s1cc": 1330,
+      "s1cc2C": 1331,
+      "s1cnc": 1332,
+      "Cc4cc5OCOc5": 1333,
+      "c12ccccc1c": 1334,
+      "CCCCCCCCCNC": 1335,
+      "1Cc1cscn1": 1336,
+      "N1Cc1cc3": 1337,
+      "N1Cc1ccc3c": 1338,
+      "Cc1cccc3ccccc13": 1339,
+      "c1sc2nc1C": 1340,
+      "NCCCCCCCCCNC": 1341,
+      "c1ccnn1Cc1c": 1342,
+      "c1ncccc1CCN1C": 1343,
+      "onc1CN1C": 1344,
+      "onc1CN1CC": 1345,
+      "1Cc1c2ccccc2ccc1": 1346,
+      "c1ccnn1Cc1ccccc1CN1C": 1347,
+      "1Cc1cc3ccccc3cc1": 1348,
+      "c3oc1nn3": 1349,
+      "CCCCCc2ccc1cc2": 1350,
+      "Cc4ccc5OCOc5c4": 1351,
+      "Cc4cc5OCOc5cc4": 1352,
+      "12CCCN2": 1353,
+      "1c2c": 1354,
+      "1OCC": 1355,
+      "1c1scc": 1356,
+      "1c2occ": 1357,
+      "23": 1358,
+      "2CCCCNC": 1359,
+      "3CCOCC3": 1360,
+      "4CSC": 1361,
+      "4c4scc": 1362,
+      "5C2": 1363,
+      "5ccccc5": 1364,
+      "@]": 1365,
+      "CN21": 1366,
+      "Cc5c": 1367,
+      "NCC2": 1368,
+      "Nc3c": 1369,
+      "O4": 1370,
+      "OCCN": 1371,
+      "S1": 1372,
+      "SC1": 1373,
+      "cncc": 1374,
+      "nc4": 1375,
+      "occ1": 1376,
+      "scc1": 1377,
+      "CCc3": 1378,
+      "CCc4": 1379,
+      "ccncc1": 1380,
+      "CCCO": 1381,
+      "c1CN1CC": 1382,
+      "c1oc": 1383,
+      "N1CCCCCCNCC": 1384,
+      "C1c2cccc": 1385,
+      "c1cccc4": 1386,
+      "c1cccc2C": 1387,
+      "c1ccccc1CCC": 1388,
+      "c1ccccc1Cl": 1389,
+      "c1ccccc1SC": 1390,
+      "c1ccccc1CCN1C": 1391,
+      "Cc2scc": 1392,
+      "Cc2c3cccc": 1393,
+      "c3c2ccc": 1394,
+      "2NCCCC": 1395,
+      "2NCCCCNC": 1396,
+      "2NCCNC": 1397,
+      "2NCCCCCNC": 1398,
+      "2CN3C": 1399,
+      "CNCCCC1": 1400,
+      "CNCCCCCC1": 1401,
+      "CN3CCOCC3": 1402,
+      "1Cc1cnccc1": 1403,
+      "1Cc1c2cc": 1404,
+      "CCCCc1cc": 1405,
+      "Cc3scc": 1406,
+      "Cc3c4cc": 1407,
+      "1CCN1CCOCC1": 1408,
+      "CCC3CC": 1409,
+      "CCC3CCC": 1410,
+      "CCC3CCCC": 1411,
+      "N1CCN": 1412,
+      "N1CCc1cnccc1": 1413,
+      "c1ccc2cccc": 1414,
+      "cc1CCCN1CC": 1415,
+      "COCc3cncc": 1416,
+      "ccc6": 1417,
+      "cc2cc": 1418,
+      "cc2nc1": 1419,
+      "c1coc": 1420,
+      "c1co2": 1421,
+      "c1cscn1": 1422,
+      "c1csc2": 1423,
+      "c4nc1": 1424,
+      "c4oc": 1425,
+      "c4oc1": 1426,
+      "c4csc1": 1427,
+      "c4c1cccc4": 1428,
+      "CCCCCc1cc2": 1429,
+      "CCCCCc4ccc": 1430,
+      "Cc2ccc4OCOc4": 1431,
+      "Clc1c": 1432,
+      "COc3cc": 1433,
+      "Cc2cc4OCOc4": 1434,
+      "c1ccccc1Cn1cccn1": 1435,
+      "NCCN2": 1436,
+      "CN1CCc1ccccc1": 1437,
+      "CN1CCOCC": 1438,
+      "CCCN4C": 1439,
+      "Cc4ncs": 1440,
+      "ccc23": 1441,
+      "ccc2cccc1": 1442,
+      "C1CNCC": 1443,
+      "n1c2scc": 1444,
+      "n1cc2cc": 1445,
+      "cccc23": 1446,
+      "cccc2c1": 1447,
+      "cccc2c1cccc2": 1448,
+      "cccc32": 1449,
+      "NCCCCN1": 1450,
+      "NCCCCCCC1": 1451,
+      "NCCCCCCCN1": 1452,
+      "Cc1c4ccccc4": 1453,
+      "C1CCCCNCC": 1454,
+      "C1CCCCCCCNC": 1455,
+      "c12ccccc1": 1456,
+      "ccc34": 1457,
+      "c1cccc2cccc": 1458,
+      "c1cccc2c1c": 1459,
+      "c1cccc2ccccc12": 1460,
+      "c1cccc2c1cccc2C": 1461,
+      "nnn3": 1462,
+      "ncs1": 1463,
+      "CCOCC5": 1464,
+      "Brc1cc2c": 1465,
+      "c5cc": 1466,
+      "o1c2nnc1": 1467,
+      "NCCCCCN": 1468,
+      "c1c2CCCCC": 1469,
+      "1Cc1ccc3ccccc3c1": 1470,
+      "1COCCN": 1471,
+      "c1c2ccccc2ccc1": 1472,
+      "c1cc2ccccc2c": 1473,
+      "1CCc1ccccc1Cl": 1474,
+      "s1cc2nc1": 1475,
+      "Cc4cc5ccccc5": 1476,
+      "cccc1CN1C": 1477,
+      "N1Cc1ccc2OCOc2c1": 1478,
+      "c1ccc2cc1C": 1479,
+      "1cnc": 1480,
+      "1Cc1c3c": 1481,
+      "c4c3cccc4Br": 1482,
+      "NCCCCCCCCCN1": 1483,
+      "CCCc4cn": 1484,
+      "c2cc1ccc2": 1485,
+      "cccn5": 1486,
+      "cccnc4": 1487,
+      "CN1Cc1cc3c": 1488,
+      "1c2ccccc2cc1C": 1489,
+      "c2nc1oc2": 1490,
+      "c1ccncc1C": 1491,
+      "CC5CCOCC5": 1492,
+      "c1cs3": 1493,
+      "1Cc1cc3c": 1494,
+      "c1ccc2C": 1495,
+      "c1ccnn1Cc1ccccc1CN1CC": 1496,
+      "Cn5nccc": 1497,
+      "Cn5cccn5": 1498,
+      "1Cc1cccc3c1cccc3": 1499,
+      "1Cc1cccc3ccccc13": 1500,
+      "5CCCN5C2": 1501,
+      "S1C2c3cccc": 1502,
+      "c3nc1cs3": 1503,
+      "N1Cc1cc3c": 1504,
+      "CCc3noc": 1505,
+      "CCc4cccnc4": 1506,
+      "c1csc2n1": 1507,
+      "c4nc1sc4": 1508,
+      "c4oc1nn4": 1509,
+      "c4csc1n4": 1510,
+      "Cc2ccc4OCOc4c2": 1511,
+      "Cc2cc4OCOc4cc2": 1512,
+      "Cc4ncsc4": 1513,
+      "n1c2scc1C": 1514,
+      "Cc4cc5ccccc5cc4": 1515,
+      "Cn5nccc5": 1516
+    },
+    "merges": [
+      [
+        "C",
+        "C"
+      ],
+      [
+        "]",
+        "("
+      ],
+      [
+        "c",
+        "c"
+      ],
+      [
+        "(",
+        "="
+      ],
+      [
+        ")",
+        "="
+      ],
+      [
+        "@",
+        "@"
+      ],
+      [
+        ")",
+        "["
+      ],
+      [
+        "(",
+        "["
+      ],
+      [
+        "N",
+        "C"
+      ],
+      [
+        "CC",
+        "C"
+      ],
+      [
+        "c",
+        "1"
+      ],
+      [
+        "cc",
+        "cc"
+      ],
+      [
+        "c",
+        "2"
+      ],
+      [
+        "N",
+        "2"
+      ],
+      [
+        "N",
+        "1"
+      ],
+      [
+        "C",
+        "1"
+      ],
+      [
+        "c1",
+        "cccc"
+      ],
+      [
+        "c1cccc",
+        "c1"
+      ],
+      [
+        "CCC",
+        "2"
+      ],
+      [
+        "C",
+        "c1ccccc1"
+      ],
+      [
+        "C",
+        "c2"
+      ],
+      [
+        "cccc",
+        "c2"
+      ],
+      [
+        "Cc2",
+        "ccccc2"
+      ],
+      [
+        "c",
+        "3"
+      ],
+      [
+        "2",
+        "CCC"
+      ],
+      [
+        "2",
+        "N"
+      ],
+      [
+        "2",
+        "C"
+      ],
+      [
+        "C",
+        "N"
+      ],
+      [
+        "N2",
+        "C"
+      ],
+      [
+        "1",
+        "C"
+      ],
+      [
+        "N1",
+        "C"
+      ],
+      [
+        "2CCC",
+        "N2C"
+      ],
+      [
+        "N2",
+        "CCC"
+      ],
+      [
+        "](",
+        "["
+      ],
+      [
+        "O",
+        "C"
+      ],
+      [
+        "CCC",
+        "1"
+      ],
+      [
+        "CC",
+        "CC"
+      ],
+      [
+        "N",
+        "3"
+      ],
+      [
+        "C",
+        "c3"
+      ],
+      [
+        "cccc",
+        "c3"
+      ],
+      [
+        ")",
+        "("
+      ],
+      [
+        "Cc3",
+        "ccccc3"
+      ],
+      [
+        "1",
+        "CC"
+      ],
+      [
+        "1",
+        "N"
+      ],
+      [
+        "1",
+        "NC"
+      ],
+      [
+        "CCC",
+        "3"
+      ],
+      [
+        "N1",
+        "CC"
+      ],
+      [
+        "NC",
+        "1"
+      ],
+      [
+        "c1",
+        "cc"
+      ],
+      [
+        "N2",
+        "CC"
+      ],
+      [
+        "N1CC",
+        "CCC1"
+      ],
+      [
+        "N2CC",
+        "CCC2"
+      ],
+      [
+        "C",
+        "2"
+      ],
+      [
+        "CCC",
+        "N1C"
+      ],
+      [
+        "1",
+        "CCCN1C"
+      ],
+      [
+        "cc",
+        "1"
+      ],
+      [
+        "C1",
+        "N"
+      ],
+      [
+        "3",
+        "CCC"
+      ],
+      [
+        "3CCC",
+        "N3"
+      ],
+      [
+        "3",
+        "N"
+      ],
+      [
+        "c1cc",
+        "c"
+      ],
+      [
+        "CC",
+        "1"
+      ],
+      [
+        "N3",
+        "CCC"
+      ],
+      [
+        "C",
+        "OC"
+      ],
+      [
+        "3CCCN3",
+        "C"
+      ],
+      [
+        "3",
+        "C"
+      ],
+      [
+        "cc",
+        "c"
+      ],
+      [
+        "cc",
+        "2"
+      ],
+      [
+        "C1",
+        "C"
+      ],
+      [
+        "c1",
+        "c"
+      ],
+      [
+        "CC",
+        "2"
+      ],
+      [
+        "C1",
+        "CC"
+      ],
+      [
+        "cc",
+        "c1"
+      ],
+      [
+        "C",
+        "N1C"
+      ],
+      [
+        "c",
+        "4"
+      ],
+      [
+        "2CCC",
+        "N2"
+      ],
+      [
+        "CC",
+        "CCC"
+      ],
+      [
+        "C",
+        "c1ccc"
+      ],
+      [
+        "Cc2",
+        "ccc"
+      ],
+      [
+        "1",
+        "Cc1ccccc1"
+      ],
+      [
+        "C",
+        "N1"
+      ],
+      [
+        "cccc",
+        "1"
+      ],
+      [
+        "CC",
+        "1CC"
+      ],
+      [
+        "cccc",
+        "c1"
+      ],
+      [
+        "2",
+        "NC"
+      ],
+      [
+        "C",
+        "l"
+      ],
+      [
+        "2CCCN2",
+        "C1"
+      ],
+      [
+        "OC",
+        "O"
+      ],
+      [
+        "C",
+        "c1cc"
+      ],
+      [
+        "CC",
+        "O"
+      ],
+      [
+        "CCC",
+        "OC"
+      ],
+      [
+        "C",
+        "O"
+      ],
+      [
+        "Cc2",
+        "cc"
+      ],
+      [
+        "c1ccccc1",
+        "C"
+      ],
+      [
+        "N",
+        "CC"
+      ],
+      [
+        "NC",
+        "2"
+      ],
+      [
+        "c2",
+        "ccccc2"
+      ],
+      [
+        "C",
+        "NC"
+      ],
+      [
+        "2",
+        "C1"
+      ],
+      [
+        "CC1CC",
+        "CCC1"
+      ],
+      [
+        "N1",
+        "2"
+      ],
+      [
+        "O",
+        "CC1"
+      ],
+      [
+        "C",
+        "N1CC"
+      ],
+      [
+        "N1",
+        "CCC2"
+      ],
+      [
+        "cccc",
+        "c4"
+      ],
+      [
+        "1",
+        "CCC2"
+      ],
+      [
+        "CC",
+        "CCC2"
+      ],
+      [
+        "CC2",
+        "CCCCC2"
+      ],
+      [
+        "CCC",
+        "N"
+      ],
+      [
+        "C",
+        "c4"
+      ],
+      [
+        "CC",
+        "N"
+      ],
+      [
+        "N1",
+        "CCC"
+      ],
+      [
+        "Cc4",
+        "ccccc4"
+      ],
+      [
+        "CC",
+        "CCC3"
+      ],
+      [
+        "n",
+        "H"
+      ],
+      [
+        "C1",
+        "N2"
+      ],
+      [
+        "c2",
+        "c"
+      ],
+      [
+        "O",
+        "1"
+      ],
+      [
+        "cc",
+        "c2"
+      ],
+      [
+        "CC",
+        "3"
+      ],
+      [
+        "2",
+        "N1CCC2"
+      ],
+      [
+        "C1",
+        "CN"
+      ],
+      [
+        "CC1CC",
+        "OCC1"
+      ],
+      [
+        "C",
+        "N2C"
+      ],
+      [
+        "CCCC",
+        "1"
+      ],
+      [
+        "n",
+        "1"
+      ],
+      [
+        "1",
+        "2N"
+      ],
+      [
+        "1",
+        "2"
+      ],
+      [
+        "C",
+        "N2CC"
+      ],
+      [
+        "1",
+        "2C"
+      ],
+      [
+        "CC2",
+        "CCO"
+      ],
+      [
+        "CC2CCO",
+        "CC2"
+      ],
+      [
+        "N1",
+        "2CCC"
+      ],
+      [
+        "N1",
+        "2C"
+      ],
+      [
+        "N3",
+        "CCCCC3"
+      ],
+      [
+        "n",
+        "2"
+      ],
+      [
+        "2",
+        "1"
+      ],
+      [
+        "cccc",
+        "2"
+      ],
+      [
+        "Cc2cc",
+        "3"
+      ],
+      [
+        "cc",
+        "3"
+      ],
+      [
+        "CC",
+        "OC"
+      ],
+      [
+        "cccc",
+        "3"
+      ],
+      [
+        "2",
+        "CC"
+      ],
+      [
+        "Cc2cc",
+        "c3"
+      ],
+      [
+        "Cc1cc",
+        "2"
+      ],
+      [
+        "Cc3",
+        "ccc"
+      ],
+      [
+        "CCCC",
+        "N"
+      ],
+      [
+        "2",
+        "CC1"
+      ],
+      [
+        "C1",
+        "N2C"
+      ],
+      [
+        ")",
+        "(["
+      ],
+      [
+        "n",
+        "c"
+      ],
+      [
+        "N",
+        "CCCC"
+      ],
+      [
+        "N",
+        "4"
+      ],
+      [
+        "2",
+        "N1C"
+      ],
+      [
+        "C1C",
+        "N2"
+      ],
+      [
+        ")",
+        "(="
+      ],
+      [
+        "C1CC",
+        "N2C"
+      ],
+      [
+        "C1C",
+        "N2C"
+      ],
+      [
+        "C",
+        "c1"
+      ],
+      [
+        "C1CC",
+        "N2"
+      ],
+      [
+        "N2",
+        "C1"
+      ],
+      [
+        "C",
+        "S"
+      ],
+      [
+        "C1",
+        "N2CCC"
+      ],
+      [
+        "CCC",
+        "4"
+      ],
+      [
+        "c1c",
+        "n"
+      ],
+      [
+        "CC",
+        "N1CC"
+      ],
+      [
+        "OCO",
+        "2"
+      ],
+      [
+        "N2CC",
+        "1"
+      ],
+      [
+        "2CCCN2",
+        "1"
+      ],
+      [
+        "N1",
+        "CCCC1"
+      ],
+      [
+        "c2",
+        "ccc"
+      ],
+      [
+        "2CCC",
+        "N12"
+      ],
+      [
+        "c3",
+        "ccccc3"
+      ],
+      [
+        "n",
+        "c1"
+      ],
+      [
+        "OCO",
+        "c2"
+      ],
+      [
+        "OCO",
+        "c3"
+      ],
+      [
+        "CCC",
+        "NC"
+      ],
+      [
+        "OCO",
+        "3"
+      ],
+      [
+        "CCC",
+        "c1ccccc1"
+      ],
+      [
+        "CC",
+        "c1ccccc1"
+      ],
+      [
+        "CN1",
+        "Cc1ccccc1"
+      ],
+      [
+        "4",
+        "C"
+      ],
+      [
+        "CO",
+        "CCC"
+      ],
+      [
+        "o",
+        "c"
+      ],
+      [
+        "CC",
+        "c2ccccc2"
+      ],
+      [
+        "C1CC",
+        "N"
+      ],
+      [
+        "OC",
+        "2"
+      ],
+      [
+        "Cc2",
+        "cccc"
+      ],
+      [
+        "CCCC",
+        "CC"
+      ],
+      [
+        "O",
+        "CC"
+      ],
+      [
+        "3CCCN3",
+        "C1"
+      ],
+      [
+        "CCCC",
+        "2"
+      ],
+      [
+        "1",
+        "2CCC"
+      ],
+      [
+        "12CCC",
+        "N1C"
+      ],
+      [
+        "C",
+        "c1c"
+      ],
+      [
+        "Cc2",
+        "c"
+      ],
+      [
+        "CCC",
+        "c2ccccc2"
+      ],
+      [
+        "2CCC",
+        "1"
+      ],
+      [
+        "N2CCC",
+        "1"
+      ],
+      [
+        "CC3",
+        "CCCCC3"
+      ],
+      [
+        "1",
+        "2CCCN2C"
+      ],
+      [
+        "Cc2cc3",
+        "c"
+      ],
+      [
+        "1",
+        "CCCC"
+      ],
+      [
+        "Cc1cc2",
+        "c"
+      ],
+      [
+        "CCN1CC",
+        "OCC1"
+      ],
+      [
+        "N2",
+        "CCCC2"
+      ],
+      [
+        "C",
+        "c1cccc"
+      ],
+      [
+        "c3",
+        "c"
+      ],
+      [
+        "Cc2ccc3",
+        "c"
+      ],
+      [
+        "Cc1cc",
+        "c2c"
+      ],
+      [
+        "CCO",
+        "CC3"
+      ],
+      [
+        "n",
+        "3"
+      ],
+      [
+        "N2",
+        "1"
+      ],
+      [
+        "n",
+        "oc"
+      ],
+      [
+        "CCO",
+        "c1ccccc1"
+      ],
+      [
+        "c2c",
+        "n"
+      ],
+      [
+        "CC",
+        "N2CC"
+      ],
+      [
+        "n",
+        "c2"
+      ],
+      [
+        "CC",
+        "CCC1"
+      ],
+      [
+        "N4",
+        "CCC"
+      ],
+      [
+        "O",
+        "CC2"
+      ],
+      [
+        "Cc3",
+        "cc"
+      ],
+      [
+        "C1",
+        "CCCC"
+      ],
+      [
+        "CCCC",
+        "c1ccccc1"
+      ],
+      [
+        "4",
+        "N"
+      ],
+      [
+        "3CCCN3",
+        "C2"
+      ],
+      [
+        "CCC",
+        "c1cn"
+      ],
+      [
+        "CCN2CC",
+        "OCC2"
+      ],
+      [
+        "4",
+        "CCCN"
+      ],
+      [
+        "s",
+        "c"
+      ],
+      [
+        "c1",
+        "2"
+      ],
+      [
+        "C1",
+        "O"
+      ],
+      [
+        "CCO",
+        "c2ccccc2"
+      ],
+      [
+        "CC3",
+        "CCOCC3"
+      ],
+      [
+        "CCC",
+        "N1CC"
+      ],
+      [
+        "C",
+        "n1"
+      ],
+      [
+        "OCOc2",
+        "c1"
+      ],
+      [
+        "CS",
+        "C"
+      ],
+      [
+        "C",
+        "n2"
+      ],
+      [
+        "C1",
+        "CCCN"
+      ],
+      [
+        "O",
+        "1C"
+      ],
+      [
+        "CCCC",
+        "c2ccccc2"
+      ],
+      [
+        "c2",
+        "OCOc2c1"
+      ],
+      [
+        "c2ccccc2",
+        "c1"
+      ],
+      [
+        "c2",
+        "cc"
+      ],
+      [
+        "CS",
+        "CC"
+      ],
+      [
+        "CO",
+        "CC"
+      ],
+      [
+        "1",
+        "OC"
+      ],
+      [
+        "c1ccccc1C",
+        "N1CC"
+      ],
+      [
+        "N1",
+        "Cc1ccccc1"
+      ],
+      [
+        "Cc2cc3",
+        "OCOc3"
+      ],
+      [
+        "Cc2cc3OCOc3",
+        "cc2"
+      ],
+      [
+        "CCC",
+        "c2cn"
+      ],
+      [
+        "c1ccccc1",
+        "CN1C"
+      ],
+      [
+        "Cc1cc",
+        "c2OCOc2c1"
+      ],
+      [
+        "4",
+        "c"
+      ],
+      [
+        "c1cn",
+        "ccc1"
+      ],
+      [
+        "cc",
+        "c3"
+      ],
+      [
+        "OCOc2",
+        "cc1"
+      ],
+      [
+        "S",
+        "C"
+      ],
+      [
+        "c1cccc",
+        "2"
+      ],
+      [
+        "C1CCCC",
+        "N1C"
+      ],
+      [
+        "N",
+        "S"
+      ],
+      [
+        "c2",
+        "cccc"
+      ],
+      [
+        "3",
+        "C1"
+      ],
+      [
+        "c1cc",
+        "2"
+      ],
+      [
+        "Cc2ccc3",
+        "OCOc3"
+      ],
+      [
+        "Cc2ccc3OCOc3",
+        "c2"
+      ],
+      [
+        "CC",
+        "N1C"
+      ],
+      [
+        "O",
+        "C1"
+      ],
+      [
+        "NCCCC",
+        "CC"
+      ],
+      [
+        "1",
+        "CCC3"
+      ],
+      [
+        "CN1",
+        "CCC"
+      ],
+      [
+        "4CCCN",
+        "4C"
+      ],
+      [
+        "Cc1cc2",
+        "OCOc2cc1"
+      ],
+      [
+        "CC",
+        "c1ccc"
+      ],
+      [
+        "CCCC",
+        "NC"
+      ],
+      [
+        "3",
+        "N1"
+      ],
+      [
+        "3N1",
+        "CCC3"
+      ],
+      [
+        "CCC",
+        "N2C"
+      ],
+      [
+        "NCCCC",
+        "CCN"
+      ],
+      [
+        "o",
+        "n1"
+      ],
+      [
+        "1C",
+        "c1ccc"
+      ],
+      [
+        "3",
+        "C2"
+      ],
+      [
+        "Cc1cc2",
+        "ccccc2"
+      ],
+      [
+        "ccccc3",
+        "c2"
+      ],
+      [
+        "Cc2ccc3",
+        "ccccc3c2"
+      ],
+      [
+        "C",
+        "3"
+      ],
+      [
+        "cccc",
+        "4"
+      ],
+      [
+        "Cc2cc3",
+        "ccccc3"
+      ],
+      [
+        "CCCCC",
+        "c2ccc"
+      ],
+      [
+        "n",
+        "ccc2"
+      ],
+      [
+        "CC",
+        "c2ccc"
+      ],
+      [
+        "Cc1cc",
+        "c2ccccc2c1"
+      ],
+      [
+        "CCc1ccc",
+        "nc1"
+      ],
+      [
+        "Cc1cc2ccccc2",
+        "cc1"
+      ],
+      [
+        "N",
+        "CCC"
+      ],
+      [
+        "CCCc1cn",
+        "n"
+      ],
+      [
+        "ccc",
+        "n1"
+      ],
+      [
+        "Cc1",
+        "noc"
+      ],
+      [
+        "n",
+        "n"
+      ],
+      [
+        "CO",
+        "CCN"
+      ],
+      [
+        "n",
+        "ccc1"
+      ],
+      [
+        "nc",
+        "s"
+      ],
+      [
+        "CC",
+        "c1cnccc1"
+      ],
+      [
+        "CCC",
+        "N1CCCC1"
+      ],
+      [
+        "CCC",
+        "c3ccccc3"
+      ],
+      [
+        "Cc2cc3ccccc3",
+        "cc2"
+      ],
+      [
+        "C",
+        "NC1"
+      ],
+      [
+        "CC",
+        "SC"
+      ],
+      [
+        "Cn1",
+        "cccn1"
+      ],
+      [
+        "c2",
+        "nc"
+      ],
+      [
+        "Cn1",
+        "nccc1"
+      ],
+      [
+        "Cc1cc",
+        "3"
+      ],
+      [
+        "Cn2",
+        "nccc2"
+      ],
+      [
+        "CCO",
+        "CC"
+      ],
+      [
+        "4",
+        "OCO"
+      ],
+      [
+        "CCc2ccc",
+        "nc2"
+      ],
+      [
+        "4OCO",
+        "c4"
+      ],
+      [
+        "CCC",
+        "N2CCCC2"
+      ],
+      [
+        "1C",
+        "OC"
+      ],
+      [
+        "ccc",
+        "n2"
+      ],
+      [
+        "Cn2",
+        "cccn2"
+      ],
+      [
+        "ccc1",
+        "C"
+      ],
+      [
+        "(",
+        "/"
+      ],
+      [
+        "c",
+        "s"
+      ],
+      [
+        "CC",
+        "c2cn"
+      ],
+      [
+        "OCO",
+        "4"
+      ],
+      [
+        "CCc2cn",
+        "ccc2"
+      ],
+      [
+        "4",
+        "C2"
+      ],
+      [
+        "C",
+        "n3"
+      ],
+      [
+        "Cc3ccc",
+        "4c"
+      ],
+      [
+        "CCC",
+        "1C"
+      ],
+      [
+        "o",
+        "n2"
+      ],
+      [
+        "C1",
+        "CCC"
+      ],
+      [
+        "CCCc2cn",
+        "n"
+      ],
+      [
+        "Cc2",
+        "noc"
+      ],
+      [
+        "3CCCN3",
+        "1"
+      ],
+      [
+        "Cc1",
+        "c2ccccc2"
+      ],
+      [
+        "B",
+        "r"
+      ],
+      [
+        "c",
+        "5"
+      ],
+      [
+        "Cc1",
+        "c2c"
+      ],
+      [
+        "s",
+        "cc"
+      ],
+      [
+        "4",
+        "ccccc4"
+      ],
+      [
+        "Cc2",
+        "c3c"
+      ],
+      [
+        "CCCC",
+        "3"
+      ],
+      [
+        "1",
+        "3"
+      ],
+      [
+        "CC",
+        "NC"
+      ],
+      [
+        "c1cc2",
+        "c"
+      ],
+      [
+        "CCCC",
+        "O"
+      ],
+      [
+        "4CCCN",
+        "4C2"
+      ],
+      [
+        "3",
+        "1"
+      ],
+      [
+        "n",
+        "ccc3"
+      ],
+      [
+        "1CC",
+        "CCC1"
+      ],
+      [
+        "c2",
+        "cccc3"
+      ],
+      [
+        "o",
+        "2"
+      ],
+      [
+        "CCCC",
+        "c2cccc"
+      ],
+      [
+        "n",
+        "nc"
+      ],
+      [
+        "N3",
+        "CCCC3"
+      ],
+      [
+        "Cc3",
+        "c"
+      ],
+      [
+        "Cc3cc",
+        "4c"
+      ],
+      [
+        "Cc2",
+        "c3ccccc3"
+      ],
+      [
+        "c3",
+        "ccc"
+      ],
+      [
+        "Cc1cccc",
+        "2"
+      ],
+      [
+        "c1",
+        "c2c"
+      ],
+      [
+        "c3",
+        "nc"
+      ],
+      [
+        "c12",
+        "c"
+      ],
+      [
+        "NCCCCCC",
+        "NC"
+      ],
+      [
+        ")",
+        "/"
+      ],
+      [
+        "Cc2",
+        "cccc3"
+      ],
+      [
+        "CCCC",
+        "c2cc"
+      ],
+      [
+        "n",
+        "c3"
+      ],
+      [
+        "CCCCCC",
+        "NC"
+      ],
+      [
+        "sc",
+        "n1"
+      ],
+      [
+        "1",
+        "CCC"
+      ],
+      [
+        "N3",
+        "CCOCC3"
+      ],
+      [
+        "N1",
+        "3"
+      ],
+      [
+        "3CCC",
+        "N13"
+      ],
+      [
+        "s",
+        "c2"
+      ],
+      [
+        "1CC",
+        "OCC1"
+      ],
+      [
+        "CO",
+        "CCO"
+      ],
+      [
+        "c2c",
+        "sc"
+      ],
+      [
+        "Cc1c",
+        "scn1"
+      ],
+      [
+        "Cc2c",
+        "sc"
+      ],
+      [
+        "ncs",
+        "c1"
+      ],
+      [
+        "N",
+        "CC1"
+      ],
+      [
+        "CC",
+        "N3CCOCC3"
+      ],
+      [
+        "CCC",
+        "c3c"
+      ],
+      [
+        "C1CC",
+        "CCC1"
+      ],
+      [
+        "(",
+        "\\"
+      ],
+      [
+        "CCCCC",
+        "4"
+      ],
+      [
+        "ccccc1",
+        "2"
+      ],
+      [
+        "CCO",
+        "C1"
+      ],
+      [
+        "CCO",
+        "c3ccccc3"
+      ],
+      [
+        "Cc2csc",
+        "n2"
+      ],
+      [
+        "Cc1ccccc1",
+        "Cn1nccc1"
+      ],
+      [
+        "c1cc",
+        "c2c"
+      ],
+      [
+        "C1C",
+        "O"
+      ],
+      [
+        "cc",
+        "1C"
+      ],
+      [
+        "C1",
+        "NC"
+      ],
+      [
+        "C1CC",
+        "CCC1C"
+      ],
+      [
+        "Cc1cc3",
+        "c"
+      ],
+      [
+        "O",
+        "CCCN1C"
+      ],
+      [
+        "n",
+        "4"
+      ],
+      [
+        "CCO",
+        "1"
+      ],
+      [
+        "n",
+        "n2"
+      ],
+      [
+        "o",
+        "1"
+      ],
+      [
+        "CCCC",
+        "CCN"
+      ],
+      [
+        "N3",
+        "C"
+      ],
+      [
+        "CCO",
+        "CC1"
+      ],
+      [
+        "Cc3ccc",
+        "4OCOc4"
+      ],
+      [
+        "Cn3",
+        "nccc3"
+      ],
+      [
+        "Cc3ccc4OCOc4",
+        "c3"
+      ],
+      [
+        "O",
+        "CCCN1CC"
+      ],
+      [
+        "Cc1",
+        "ncsc1"
+      ],
+      [
+        "C1CC",
+        "OCC1"
+      ],
+      [
+        "c4",
+        "ccccc4"
+      ],
+      [
+        "CC",
+        "4"
+      ],
+      [
+        "CN",
+        "3C"
+      ],
+      [
+        "Cc3cc",
+        "4ccccc4"
+      ],
+      [
+        "c2",
+        "c1cccc2"
+      ],
+      [
+        "Cc2",
+        "ncs"
+      ],
+      [
+        "CCCC",
+        "c3ccccc3"
+      ],
+      [
+        "Cc3cc",
+        "4OCOc4"
+      ],
+      [
+        "Cc2ncs",
+        "c2"
+      ],
+      [
+        "Cc3cc4OCOc4",
+        "cc3"
+      ],
+      [
+        "Cc1ccccc1",
+        "Cn1cccn1"
+      ],
+      [
+        "n",
+        "cc"
+      ],
+      [
+        "ccc",
+        "n3"
+      ],
+      [
+        "ccc1",
+        "O"
+      ],
+      [
+        "Cc1cc",
+        "c3c"
+      ],
+      [
+        "Cn3",
+        "cccn3"
+      ],
+      [
+        "C",
+        "c1cnccc1"
+      ],
+      [
+        "Cc3cc4ccccc4",
+        "cc3"
+      ],
+      [
+        "c4",
+        "c"
+      ],
+      [
+        "CN1CC",
+        "1CCOCC1"
+      ],
+      [
+        "cs",
+        "2"
+      ],
+      [
+        "c2",
+        "oc"
+      ],
+      [
+        "c3",
+        "c2cccc3"
+      ],
+      [
+        "c",
+        "n1"
+      ],
+      [
+        "CC",
+        "S"
+      ],
+      [
+        "CC",
+        "c3ccccc3"
+      ],
+      [
+        "3",
+        "NC"
+      ],
+      [
+        "c2",
+        "nnc"
+      ],
+      [
+        "C1C",
+        "NC"
+      ],
+      [
+        "CN1",
+        "CCCOC"
+      ],
+      [
+        "N",
+        "CCCCC"
+      ],
+      [
+        "O",
+        "c1ccc"
+      ],
+      [
+        "Cc3",
+        "cccc"
+      ],
+      [
+        "Cc1ccc",
+        "nc1"
+      ],
+      [
+        "CN1CC",
+        "CCC"
+      ],
+      [
+        "O1C",
+        "O"
+      ],
+      [
+        "C1CO",
+        "CCC1C"
+      ],
+      [
+        "Cc2ccc",
+        "nc2"
+      ],
+      [
+        "O1",
+        "CCC"
+      ],
+      [
+        "Cc2cccc3",
+        "c2cccc3"
+      ],
+      [
+        "CCC",
+        "N2CC"
+      ],
+      [
+        "Cc2ccccc2",
+        "Cn2nccc2"
+      ],
+      [
+        "N1CC",
+        "OCC1"
+      ],
+      [
+        "NCCCCCC",
+        "N1"
+      ],
+      [
+        "Cc2ccccc2",
+        "Cn2cccn2"
+      ],
+      [
+        "n",
+        "cc1"
+      ],
+      [
+        "Cc1c2ccccc2",
+        "ccc1"
+      ],
+      [
+        "Cc1cccc2",
+        "c1cccc2"
+      ],
+      [
+        "c2",
+        "scc"
+      ],
+      [
+        "c3",
+        "OCOc3"
+      ],
+      [
+        "c3OCOc3",
+        "c1"
+      ],
+      [
+        "3",
+        "CC"
+      ],
+      [
+        "c1",
+        "c2"
+      ],
+      [
+        "o",
+        "3"
+      ],
+      [
+        "cc2",
+        "c"
+      ],
+      [
+        "CO",
+        "CCN2CCOCC2"
+      ],
+      [
+        "CN1CC",
+        "1CCCCC1"
+      ],
+      [
+        "F",
+        "C"
+      ],
+      [
+        "c",
+        "n2"
+      ],
+      [
+        "cccc",
+        "c5"
+      ],
+      [
+        "ccccc2",
+        "3"
+      ],
+      [
+        "c3",
+        "cc"
+      ],
+      [
+        "CN",
+        "3CC"
+      ],
+      [
+        "s",
+        "c3"
+      ],
+      [
+        "N",
+        "CCC1"
+      ],
+      [
+        "c3",
+        "cccc"
+      ],
+      [
+        "Cc1cc",
+        "c3OCOc3c1"
+      ],
+      [
+        "OCOc3",
+        "cc1"
+      ],
+      [
+        "c5",
+        "ccccc5"
+      ],
+      [
+        "Cc2c3ccccc3",
+        "ccc2"
+      ],
+      [
+        "1C",
+        "c1cc"
+      ],
+      [
+        "n",
+        "n3"
+      ],
+      [
+        "cc",
+        "4"
+      ],
+      [
+        "c3",
+        "scc"
+      ],
+      [
+        "CN1C",
+        "c1cc"
+      ],
+      [
+        "C1O",
+        "CCC"
+      ],
+      [
+        "CC",
+        "l"
+      ],
+      [
+        "CC",
+        "N2C"
+      ],
+      [
+        "CO",
+        "CCN1CCOCC1"
+      ],
+      [
+        "cs",
+        "3"
+      ],
+      [
+        "CC4",
+        "CCCCC4"
+      ],
+      [
+        "Cc2",
+        "nc"
+      ],
+      [
+        "c3ccccc3",
+        "c1"
+      ],
+      [
+        "Cc2c",
+        "nccc2"
+      ],
+      [
+        "c12",
+        "ccc"
+      ],
+      [
+        "NCCCCCC",
+        "NC1"
+      ],
+      [
+        "CCC",
+        "NC1"
+      ],
+      [
+        "1C",
+        "O"
+      ],
+      [
+        "CCC1",
+        "CC"
+      ],
+      [
+        "Cc3",
+        "noc"
+      ],
+      [
+        "1CC",
+        "1CCCCC1"
+      ],
+      [
+        "1",
+        "O"
+      ],
+      [
+        "o",
+        "nc"
+      ],
+      [
+        "c1",
+        "c2ccccc2"
+      ],
+      [
+        "CCC2",
+        "CC"
+      ],
+      [
+        "c2ccccc2",
+        "1"
+      ],
+      [
+        "Cc4",
+        "ccc"
+      ],
+      [
+        "Cc3ccc",
+        "4ccccc4"
+      ],
+      [
+        "Cc3ccc4ccccc4",
+        "c3"
+      ],
+      [
+        "CC",
+        "c3ccc"
+      ],
+      [
+        "cc1",
+        "F"
+      ],
+      [
+        "NCC",
+        "CCC1"
+      ],
+      [
+        "c12",
+        "cc"
+      ],
+      [
+        "C",
+        "c5ccccc5"
+      ],
+      [
+        "N",
+        "CCCC1"
+      ],
+      [
+        "o",
+        "n3"
+      ],
+      [
+        "c2",
+        "ccccc12"
+      ],
+      [
+        "CCC1",
+        "CCCC"
+      ],
+      [
+        "CCCC",
+        "N2C"
+      ],
+      [
+        "N4",
+        "CCCCC4"
+      ],
+      [
+        "CS",
+        "c1ccccc1"
+      ],
+      [
+        "c1cn",
+        "n"
+      ],
+      [
+        "Cc1cc3",
+        "OCOc3cc1"
+      ],
+      [
+        "CCCc3c",
+        "nn"
+      ],
+      [
+        "CCC",
+        "N3C"
+      ],
+      [
+        "c1",
+        "n"
+      ],
+      [
+        "CCC2",
+        "CCCC"
+      ],
+      [
+        "C1N",
+        "CC"
+      ],
+      [
+        "CO",
+        "Cc1ccccc1"
+      ],
+      [
+        "CO",
+        "Cc2ccccc2"
+      ],
+      [
+        "c3c",
+        "sc"
+      ],
+      [
+        "c12",
+        "OCO"
+      ],
+      [
+        "Cc1cc3",
+        "ccccc3"
+      ],
+      [
+        "CCc3ccc",
+        "nc3"
+      ],
+      [
+        "c3",
+        "oc"
+      ],
+      [
+        "c3",
+        "nnc"
+      ],
+      [
+        "1C",
+        "S"
+      ],
+      [
+        "NCCCC",
+        "CC1"
+      ],
+      [
+        "CCCc3c",
+        "n"
+      ],
+      [
+        "CC",
+        "CCCN1C"
+      ],
+      [
+        "CS",
+        "c2ccccc2"
+      ],
+      [
+        "C1O",
+        "c2c"
+      ],
+      [
+        "o",
+        "c1"
+      ],
+      [
+        "CC",
+        "c3c"
+      ],
+      [
+        "N1CC",
+        "CCC"
+      ],
+      [
+        "CCc3c",
+        "nccc3"
+      ],
+      [
+        "Cc3",
+        "c4ccccc4"
+      ],
+      [
+        "C1CC",
+        "NC"
+      ],
+      [
+        "c1cc2",
+        "ccccc2"
+      ],
+      [
+        "1",
+        "CCCCN"
+      ],
+      [
+        "CCCCC",
+        "N1CC"
+      ],
+      [
+        "CN1",
+        "CCCC"
+      ],
+      [
+        "OCO",
+        "1"
+      ],
+      [
+        "Cc1cc",
+        "c3ccccc3c1"
+      ],
+      [
+        "Cc1",
+        "nc"
+      ],
+      [
+        "Cc1c",
+        "nc"
+      ],
+      [
+        "Cc1cc3ccccc3",
+        "cc1"
+      ],
+      [
+        "/",
+        "["
+      ],
+      [
+        "O",
+        "c1ccccc1"
+      ],
+      [
+        "c",
+        "n"
+      ],
+      [
+        "n",
+        "o1"
+      ],
+      [
+        "CCC",
+        "N1"
+      ],
+      [
+        "c1",
+        "nc"
+      ],
+      [
+        "ccccc2",
+        "1"
+      ],
+      [
+        "CS",
+        "C1"
+      ],
+      [
+        "C1COCCC1C",
+        "N1CC"
+      ],
+      [
+        "C",
+        "NC2"
+      ],
+      [
+        "o",
+        "c2"
+      ],
+      [
+        "CC",
+        "c2c"
+      ],
+      [
+        "c1",
+        "noc"
+      ],
+      [
+        "CCCC",
+        "N1C"
+      ],
+      [
+        "](",
+        "/"
+      ],
+      [
+        "1CC",
+        "c1ccccc1"
+      ],
+      [
+        "N1CC",
+        "1CCCCC1"
+      ],
+      [
+        "CO",
+        "c1ccccc1"
+      ],
+      [
+        "Cc1",
+        "onc"
+      ],
+      [
+        "c3ccccc3",
+        "2"
+      ],
+      [
+        "nn",
+        "n"
+      ],
+      [
+        "CCOCC",
+        "4"
+      ],
+      [
+        "Cc1cccc2",
+        "ccccc12"
+      ],
+      [
+        "C1COCCC1C",
+        "N1C"
+      ],
+      [
+        "O",
+        "CCN1CC"
+      ],
+      [
+        "s",
+        "1"
+      ],
+      [
+        "N1",
+        "CCCOC"
+      ],
+      [
+        "Cc3",
+        "c4c"
+      ],
+      [
+        "Cc3c",
+        "sc"
+      ],
+      [
+        "C1CCCCC1C",
+        "N1CC"
+      ],
+      [
+        "C",
+        "n4"
+      ],
+      [
+        "CC",
+        "c1c"
+      ],
+      [
+        "cc",
+        "2C"
+      ],
+      [
+        "CCC",
+        "N3CCCC3"
+      ],
+      [
+        "CN1CC",
+        "OCC1"
+      ],
+      [
+        "Cc4",
+        "cc"
+      ],
+      [
+        "O1",
+        "c2c"
+      ],
+      [
+        "Cc2c",
+        "nc"
+      ],
+      [
+        "c1cc2",
+        "OCOc2cc1"
+      ],
+      [
+        "O1CO",
+        "c2"
+      ],
+      [
+        "1CS",
+        "CC"
+      ],
+      [
+        "1",
+        "Cc2ccc"
+      ],
+      [
+        "c",
+        "o2"
+      ],
+      [
+        "s",
+        "c1"
+      ],
+      [
+        "cccc",
+        "1C"
+      ],
+      [
+        "c3",
+        "ccccc23"
+      ],
+      [
+        "c12",
+        "cccc"
+      ],
+      [
+        "Cc3csc",
+        "n3"
+      ],
+      [
+        "CCC",
+        "c1ccc"
+      ],
+      [
+        "CCCC",
+        "N1CC"
+      ],
+      [
+        "CCCC",
+        "CCCCC"
+      ],
+      [
+        "OCOc2",
+        "cc"
+      ],
+      [
+        "Cc2cccc3",
+        "ccccc23"
+      ],
+      [
+        "CC",
+        "c2cccc"
+      ],
+      [
+        "cc",
+        "c2c"
+      ],
+      [
+        "N2",
+        "CCCC"
+      ],
+      [
+        "CCC2",
+        "CCC"
+      ],
+      [
+        "c3",
+        "cccc4"
+      ],
+      [
+        "N1CC",
+        "1CCOCC1"
+      ],
+      [
+        "ccc1",
+        "2"
+      ],
+      [
+        "ccc1",
+        "CN1C"
+      ],
+      [
+        "c4",
+        "nc"
+      ],
+      [
+        "CCCCC",
+        "c3ccc"
+      ],
+      [
+        "n1",
+        "cc"
+      ],
+      [
+        "c3ccccc3",
+        "c2"
+      ],
+      [
+        "C1CCCCC1C",
+        "N1C"
+      ],
+      [
+        "-",
+        "]"
+      ],
+      [
+        "n",
+        "nc1"
+      ],
+      [
+        "CCC",
+        "c1c"
+      ],
+      [
+        "Cc3",
+        "cccc4"
+      ],
+      [
+        "1N",
+        "CCCCCCNC"
+      ],
+      [
+        "CO",
+        "c2ccccc2"
+      ],
+      [
+        "CCc2ccccc2",
+        "Cl"
+      ],
+      [
+        "COc2ccccc2",
+        "Cl"
+      ],
+      [
+        "1",
+        "CCCNC"
+      ],
+      [
+        "5",
+        "c"
+      ],
+      [
+        "CC",
+        "c1cccc"
+      ],
+      [
+        "c1cccc",
+        "3"
+      ],
+      [
+        "CCCC",
+        "c3cccc"
+      ],
+      [
+        "C1CC",
+        "CCCN"
+      ],
+      [
+        "CO",
+        "c2cccc"
+      ],
+      [
+        "CN1CC",
+        "N1CCOCC1"
+      ],
+      [
+        "cs",
+        "1"
+      ],
+      [
+        "Cc1cccc2",
+        "ccccc21"
+      ],
+      [
+        "C1CO",
+        "CCN1CC"
+      ],
+      [
+        "CC4",
+        "CCOCC4"
+      ],
+      [
+        "C",
+        "c"
+      ],
+      [
+        "F",
+        "c1ccc"
+      ],
+      [
+        "c",
+        "nc1"
+      ],
+      [
+        "n",
+        "cc2"
+      ],
+      [
+        "c1",
+        "OCO2"
+      ],
+      [
+        "1C",
+        "c1c"
+      ],
+      [
+        "Cc3ccccc3",
+        "Cn3nccc3"
+      ],
+      [
+        "ccc1",
+        "Cl"
+      ],
+      [
+        "Cc1cc",
+        "ncc1"
+      ],
+      [
+        "CO",
+        "c1cccc"
+      ],
+      [
+        "Cc2cc",
+        "ncc2"
+      ],
+      [
+        "Cc1",
+        "c3c"
+      ],
+      [
+        "CCc1ccccc1",
+        "Cl"
+      ],
+      [
+        "OCC",
+        "N2CC"
+      ],
+      [
+        "c12",
+        "ccccc2"
+      ],
+      [
+        "c1cc2",
+        "cc"
+      ],
+      [
+        "Cc3c4ccccc4",
+        "ccc3"
+      ],
+      [
+        "2",
+        "CCCCN2C"
+      ],
+      [
+        "S",
+        "C2"
+      ],
+      [
+        "o",
+        "cc"
+      ],
+      [
+        "CC",
+        "N2CCC"
+      ],
+      [
+        "CCC",
+        "c2ccc"
+      ],
+      [
+        "c1",
+        "c2cc"
+      ],
+      [
+        "2N",
+        "CCCCCCNC"
+      ],
+      [
+        "ccc",
+        "n4"
+      ],
+      [
+        "cc2",
+        "1"
+      ],
+      [
+        "Cl",
+        "c1ccc"
+      ],
+      [
+        "c1cn",
+        "cc"
+      ],
+      [
+        "c1cccc2",
+        "cc"
+      ],
+      [
+        "Cn4",
+        "cccn4"
+      ],
+      [
+        "CC",
+        "c2"
+      ],
+      [
+        "CC",
+        "N1CCC"
+      ],
+      [
+        "CCC",
+        "5"
+      ],
+      [
+        "CCC1",
+        "CCC"
+      ],
+      [
+        "CCCC",
+        "c3cc"
+      ],
+      [
+        "cc1",
+        "2"
+      ],
+      [
+        "ccc",
+        "4"
+      ],
+      [
+        "CO",
+        "c1cc"
+      ],
+      [
+        "CO",
+        "c2cc"
+      ],
+      [
+        "CCCCCC",
+        "N1"
+      ],
+      [
+        "OCC",
+        "N2C"
+      ],
+      [
+        "c1c2",
+        "C"
+      ],
+      [
+        "c1cc2ccccc2",
+        "cc1"
+      ],
+      [
+        "c",
+        "nn"
+      ],
+      [
+        "CC",
+        "c1cc"
+      ],
+      [
+        "c2",
+        "nnc1"
+      ],
+      [
+        "1C",
+        "c1cc2c"
+      ],
+      [
+        "Cc3ccccc3",
+        "Cn3cccn3"
+      ],
+      [
+        "ccc1",
+        "CN1CC"
+      ],
+      [
+        "CN1C",
+        "c1ccc"
+      ],
+      [
+        "CN1",
+        "CCCCc1ccccc1"
+      ],
+      [
+        "CN1CC",
+        "OC"
+      ],
+      [
+        "c2c",
+        "oc"
+      ],
+      [
+        "ccc2",
+        "O1"
+      ],
+      [
+        "n1",
+        "c2"
+      ],
+      [
+        "CCCCCC",
+        "NC1"
+      ],
+      [
+        "C1O",
+        "c2cc"
+      ],
+      [
+        "nn",
+        "n1"
+      ],
+      [
+        "O1CO",
+        "c2ccc"
+      ],
+      [
+        "O1CO",
+        "c2cc"
+      ],
+      [
+        "1",
+        "N2"
+      ],
+      [
+        "1",
+        "N2CCC"
+      ],
+      [
+        "1",
+        "c2oc"
+      ],
+      [
+        "@@",
+        "]("
+      ],
+      [
+        "c1",
+        "2C"
+      ],
+      [
+        "N1",
+        "CCCC"
+      ],
+      [
+        "Cc3",
+        "ncs"
+      ],
+      [
+        "ccccc3",
+        "2"
+      ],
+      [
+        "ccc1",
+        "OCO2"
+      ],
+      [
+        "CN1",
+        "CCCc1ccccc1"
+      ],
+      [
+        "ccc2",
+        "c1cccc2"
+      ],
+      [
+        "Cc1",
+        "c3ccccc3"
+      ],
+      [
+        "Cc1",
+        "nnn"
+      ],
+      [
+        "OCC",
+        "N1C"
+      ],
+      [
+        "C1CCCC",
+        "NC"
+      ],
+      [
+        "NCCCCCC",
+        "NCC"
+      ],
+      [
+        "nn",
+        "n2"
+      ],
+      [
+        "Cc2cccc3",
+        "ccccc32"
+      ],
+      [
+        "c12OCO",
+        "c1cc"
+      ],
+      [
+        "Cc3ncs",
+        "c3"
+      ],
+      [
+        "N",
+        "5"
+      ],
+      [
+        "o",
+        "4"
+      ],
+      [
+        "CC",
+        "NC1"
+      ],
+      [
+        "NC",
+        "3"
+      ],
+      [
+        "CCC",
+        "c2c"
+      ],
+      [
+        "c1",
+        "F"
+      ],
+      [
+        "c1",
+        "scc"
+      ],
+      [
+        "C1",
+        "c2ccc"
+      ],
+      [
+        "C1",
+        "CCCNC"
+      ],
+      [
+        "2C",
+        "SC"
+      ],
+      [
+        "c1ccc",
+        "nc1"
+      ],
+      [
+        "cc2",
+        "cc1"
+      ],
+      [
+        "cc2",
+        "OCOc2c1"
+      ],
+      [
+        "cc2",
+        "c1OCO2"
+      ],
+      [
+        "ccc2",
+        "cc1"
+      ],
+      [
+        "ccc2",
+        "ccc1"
+      ],
+      [
+        "ccc2",
+        "OCOc2c1"
+      ],
+      [
+        "n1",
+        "n"
+      ],
+      [
+        "CS",
+        "3"
+      ],
+      [
+        "c1cccc2",
+        "ccc"
+      ],
+      [
+        "cc1C",
+        "N1CC"
+      ],
+      [
+        "c12OCO",
+        "c1ccc"
+      ],
+      [
+        "-]",
+        ")="
+      ],
+      [
+        "c2nnc1",
+        "o2"
+      ],
+      [
+        "1",
+        "c2nc"
+      ],
+      [
+        "1",
+        "c2nnc"
+      ],
+      [
+        "O",
+        "1CC"
+      ],
+      [
+        "CC",
+        "c2cc"
+      ],
+      [
+        "N1",
+        "CCCN1C"
+      ],
+      [
+        "C1",
+        "CCCN1C"
+      ],
+      [
+        "C1",
+        "CCCCN"
+      ],
+      [
+        "N1C",
+        "c1cc"
+      ],
+      [
+        "CCCC",
+        "N2CC"
+      ],
+      [
+        "1N",
+        "CCCCCCN"
+      ],
+      [
+        "c1cc",
+        "c2cc"
+      ],
+      [
+        "c1cc",
+        "ncc"
+      ],
+      [
+        "cc2",
+        "F"
+      ],
+      [
+        "cc2",
+        "ccccc2"
+      ],
+      [
+        "cc2",
+        "OC1"
+      ],
+      [
+        "CN1",
+        "CCCN1C"
+      ],
+      [
+        "ccccc1",
+        "3"
+      ],
+      [
+        "O1",
+        "c2ccc"
+      ],
+      [
+        "O1",
+        "c2cc"
+      ],
+      [
+        "ccc2",
+        "OC1"
+      ],
+      [
+        "Cc2c",
+        "ncc"
+      ],
+      [
+        "Cc1cccc",
+        "3"
+      ],
+      [
+        "c12",
+        "OCOc2cc"
+      ],
+      [
+        "C1O",
+        "CCN"
+      ],
+      [
+        "NCCCCCC",
+        "N2"
+      ],
+      [
+        "1Cc1cc",
+        "c2ccccc2c1"
+      ],
+      [
+        "COc1ccccc1",
+        "Cl"
+      ],
+      [
+        "O1COc2",
+        "c1cc"
+      ],
+      [
+        "O1COc2",
+        "c1ccc"
+      ],
+      [
+        "O1CC",
+        "N"
+      ],
+      [
+        "c1ccncc",
+        "1CC"
+      ],
+      [
+        "+",
+        "](["
+      ],
+      [
+        "1",
+        "c"
+      ],
+      [
+        "1",
+        "Cc2cccc"
+      ],
+      [
+        "O",
+        "Cc1ccccc1"
+      ],
+      [
+        "c",
+        "nc2"
+      ],
+      [
+        "n",
+        "ccc4"
+      ],
+      [
+        "CC",
+        "N1CCCCC1"
+      ],
+      [
+        "CC",
+        "c1cn"
+      ],
+      [
+        "cc",
+        "c2ccccc2c1"
+      ],
+      [
+        "c1",
+        "nn"
+      ],
+      [
+        "c1",
+        "sc2"
+      ],
+      [
+        "cccc",
+        "5"
+      ],
+      [
+        "c1ccccc1",
+        "CCCCN1C"
+      ],
+      [
+        "Cc1ccccc1",
+        "CN1CC"
+      ],
+      [
+        "1C",
+        "c1"
+      ],
+      [
+        "1C",
+        "c1cccc"
+      ],
+      [
+        "CCCC",
+        "N1"
+      ],
+      [
+        "CCCC",
+        "NC1"
+      ],
+      [
+        "CCCC",
+        "CC1"
+      ],
+      [
+        "c1cc",
+        "c2ccccc2c1"
+      ],
+      [
+        "cc2",
+        "O1"
+      ],
+      [
+        "ccc1",
+        "F"
+      ],
+      [
+        "c4",
+        "c3cccc4"
+      ],
+      [
+        "CN1",
+        "CCCc1cnn"
+      ],
+      [
+        "Cl",
+        "c1cccc"
+      ],
+      [
+        "OCO",
+        "5"
+      ],
+      [
+        "OCO",
+        "c12"
+      ],
+      [
+        "CO",
+        "c1ccc"
+      ],
+      [
+        "CO",
+        "c2c"
+      ],
+      [
+        "ccc2",
+        "1"
+      ],
+      [
+        "NCCCC",
+        "CCCCC"
+      ],
+      [
+        "NCCCC",
+        "CCN1C"
+      ],
+      [
+        "C1O",
+        "c2ccc"
+      ],
+      [
+        "c1cccc2",
+        "c1cc"
+      ],
+      [
+        "c1cc2",
+        "OCOc2"
+      ],
+      [
+        "Cc3c",
+        "nccc3"
+      ],
+      [
+        "cc1C",
+        "N1C"
+      ],
+      [
+        "CCc2",
+        "noc"
+      ],
+      [
+        "Cc1c3ccccc3",
+        "ccc1"
+      ],
+      [
+        "5",
+        "N"
+      ],
+      [
+        "N",
+        "CCCN"
+      ],
+      [
+        "c",
+        "nccc1"
+      ],
+      [
+        "c",
+        "ncc1"
+      ],
+      [
+        "o",
+        "c3"
+      ],
+      [
+        "CC",
+        "N1"
+      ],
+      [
+        "c1",
+        "n2"
+      ],
+      [
+        "N1",
+        "CCCCCCNC"
+      ],
+      [
+        "c1ccccc1",
+        "CC"
+      ],
+      [
+        "c1ccccc1",
+        "CCCN1C"
+      ],
+      [
+        "2C",
+        "c3ccc"
+      ],
+      [
+        "CN",
+        "CCCCCCNC"
+      ],
+      [
+        "1C",
+        "2"
+      ],
+      [
+        "1C",
+        "c1cc2ccccc2cc1"
+      ],
+      [
+        "ccccc3",
+        "4"
+      ],
+      [
+        "N1CC",
+        "OC"
+      ],
+      [
+        "cc2",
+        "c1cccc2"
+      ],
+      [
+        "N1CCC",
+        "c1ccccc1"
+      ],
+      [
+        "CS",
+        "2"
+      ],
+      [
+        "4C",
+        "3"
+      ],
+      [
+        "4CCCN",
+        "4"
+      ],
+      [
+        "c12",
+        "nc"
+      ],
+      [
+        "COCC",
+        "N1C"
+      ],
+      [
+        "c1cc2",
+        "ccc"
+      ],
+      [
+        "o1",
+        "c"
+      ],
+      [
+        "c1c2",
+        "OCOc2cc"
+      ],
+      [
+        "CN1Cc1cc",
+        "c2OCOc2c1"
+      ],
+      [
+        "c1c2ccccc2",
+        "cc"
+      ],
+      [
+        "Cc4ccc",
+        "5c"
+      ],
+      [
+        "cccc1C",
+        "l"
+      ],
+      [
+        "Cc3cccc4",
+        "c3cccc4"
+      ],
+      [
+        "+",
+        "]("
+      ],
+      [
+        "s",
+        "c4"
+      ],
+      [
+        "CCC",
+        "c4c"
+      ],
+      [
+        "c1",
+        "c2ccc"
+      ],
+      [
+        "c2",
+        "c1"
+      ],
+      [
+        "c2",
+        "cc1"
+      ],
+      [
+        "c2",
+        "ccc1"
+      ],
+      [
+        "c2",
+        "occ"
+      ],
+      [
+        "c1ccccc1",
+        "OCCN1CC"
+      ],
+      [
+        "c3",
+        "c1cccc3"
+      ],
+      [
+        "1C",
+        "c1ccc2c"
+      ],
+      [
+        "C2",
+        "SC"
+      ],
+      [
+        "C1N",
+        "CCCCCCN"
+      ],
+      [
+        "ccc",
+        "n"
+      ],
+      [
+        "ccc",
+        "nc1"
+      ],
+      [
+        "cc2",
+        "cccc1"
+      ],
+      [
+        "cc2",
+        "OCO1"
+      ],
+      [
+        "CN1C",
+        "c1cc2OCOc2cc1"
+      ],
+      [
+        "CO",
+        "c1c"
+      ],
+      [
+        "CO",
+        "Cc2cncc"
+      ],
+      [
+        "N1CCC",
+        "N1CC"
+      ],
+      [
+        "Cc3ccc",
+        "nc3"
+      ],
+      [
+        "nc1",
+        "C"
+      ],
+      [
+        "OCOc2",
+        "1"
+      ],
+      [
+        "c1cccc2",
+        "c1"
+      ],
+      [
+        "C3",
+        "SC"
+      ],
+      [
+        "CN1Cc1cc",
+        "3"
+      ],
+      [
+        "c1c2ccccc2",
+        "ccc1C"
+      ],
+      [
+        "Cc4cc",
+        "5c"
+      ],
+      [
+        "C1COCCN1CC",
+        "N1C"
+      ],
+      [
+        "+](",
+        "="
+      ],
+      [
+        "1",
+        "c2ccccc2"
+      ],
+      [
+        "5",
+        "C"
+      ],
+      [
+        "C",
+        "c1cn"
+      ],
+      [
+        "c",
+        "o3"
+      ],
+      [
+        "n",
+        "cccc1"
+      ],
+      [
+        "n",
+        "n1"
+      ],
+      [
+        "n",
+        "oc1"
+      ],
+      [
+        "CC",
+        "c1cnn"
+      ],
+      [
+        "CC",
+        "c1noc"
+      ],
+      [
+        "cc",
+        "c2ccccc21"
+      ],
+      [
+        "c1",
+        "c2cccc"
+      ],
+      [
+        "cccc",
+        "2C"
+      ],
+      [
+        "cccc",
+        "1CC"
+      ],
+      [
+        "c2",
+        "c1ccc"
+      ],
+      [
+        "c2",
+        "nc1"
+      ],
+      [
+        "c2",
+        "oc1"
+      ],
+      [
+        "C1",
+        "SC"
+      ],
+      [
+        "Cc2",
+        "nnn"
+      ],
+      [
+        "2C",
+        "c3cccc"
+      ],
+      [
+        "c1cc",
+        "n"
+      ],
+      [
+        "c1cc",
+        "c2OCOc2c1"
+      ],
+      [
+        "c1cc",
+        "nn"
+      ],
+      [
+        "N2CC",
+        "OCC2"
+      ],
+      [
+        "COC",
+        "c3ccccc3"
+      ],
+      [
+        "cc2",
+        "ccccc21"
+      ],
+      [
+        "CN1C",
+        "c1cc2c"
+      ],
+      [
+        "CN1C",
+        "c1ccc2c"
+      ],
+      [
+        "cccc1",
+        "2"
+      ],
+      [
+        "CCO",
+        "c4ccccc4"
+      ],
+      [
+        "NCCCC",
+        "CCCN"
+      ],
+      [
+        "Cc1",
+        "ncccc1"
+      ],
+      [
+        "Cn1",
+        "cc"
+      ],
+      [
+        "Cn1",
+        "ncc"
+      ],
+      [
+        "c1cccc2",
+        "c"
+      ],
+      [
+        "c1c2",
+        "OCOc2"
+      ],
+      [
+        "c1n",
+        "cccc1CC"
+      ],
+      [
+        "c1cc2ccccc2",
+        "cc1C"
+      ],
+      [
+        "cn",
+        "1C"
+      ],
+      [
+        "cnn",
+        "1C"
+      ],
+      [
+        "c1ccncc1CC",
+        "N1C"
+      ],
+      [
+        "noc1",
+        "CC"
+      ],
+      [
+        "c2oc1",
+        "nn2"
+      ],
+      [
+        "2",
+        "N1"
+      ],
+      [
+        "4",
+        "CCOCC4"
+      ],
+      [
+        "5",
+        "OCO"
+      ],
+      [
+        "C",
+        "c1cnn"
+      ],
+      [
+        "N",
+        "c2ccccc2"
+      ],
+      [
+        "S",
+        "CC"
+      ],
+      [
+        "o",
+        "nc1"
+      ],
+      [
+        "CC",
+        "5"
+      ],
+      [
+        "CC",
+        "c1"
+      ],
+      [
+        "CC",
+        "N1CCCC1"
+      ],
+      [
+        "CCC",
+        "c3ccc"
+      ],
+      [
+        "CCC",
+        "c4ccccc4"
+      ],
+      [
+        "C1",
+        "SCC"
+      ],
+      [
+        "Cc2ccccc2",
+        "CN2C"
+      ],
+      [
+        "c3",
+        "ccccc13"
+      ],
+      [
+        "2N",
+        "CCCCCCN"
+      ],
+      [
+        "1C",
+        "N2"
+      ],
+      [
+        "1C",
+        "c1c2ccccc2"
+      ],
+      [
+        "N1C",
+        "c1c"
+      ],
+      [
+        "CCCC",
+        "4"
+      ],
+      [
+        "CCCC",
+        "CCCCCCNC"
+      ],
+      [
+        "CCCC",
+        "c4ccccc4"
+      ],
+      [
+        "cc1",
+        "OCO2"
+      ],
+      [
+        "COC",
+        "c1cc"
+      ],
+      [
+        "COC",
+        "c1cncc"
+      ],
+      [
+        "C1C",
+        "SC"
+      ],
+      [
+        "c1c",
+        "s"
+      ],
+      [
+        "ccc1",
+        "OC"
+      ],
+      [
+        "CN1",
+        "CCCC1"
+      ],
+      [
+        "Cl",
+        "c1cc"
+      ],
+      [
+        "CN1CC",
+        "Oc1ccccc1"
+      ],
+      [
+        "CCN",
+        "4CCOCC4"
+      ],
+      [
+        "ccc2",
+        "c1"
+      ],
+      [
+        "n1",
+        "c"
+      ],
+      [
+        "n1",
+        "cccc"
+      ],
+      [
+        "n1",
+        "nc2"
+      ],
+      [
+        "cc3",
+        "F"
+      ],
+      [
+        "CS",
+        "c3ccccc3"
+      ],
+      [
+        "1CCCC",
+        "NC"
+      ],
+      [
+        "c3c",
+        "oc"
+      ],
+      [
+        "c4ccccc4",
+        "c3"
+      ],
+      [
+        "ncc",
+        "1CCCN1C"
+      ],
+      [
+        "ncc1",
+        "CCCN1CC"
+      ],
+      [
+        "CN1Cc1cc",
+        "c3c"
+      ],
+      [
+        "c12OCO",
+        "c2ccc"
+      ],
+      [
+        "1CS",
+        "c1ccccc1"
+      ],
+      [
+        "Cn4",
+        "nccc4"
+      ],
+      [
+        "-]",
+        ")"
+      ],
+      [
+        "C1COCCN1CC",
+        "N1CC"
+      ],
+      [
+        "c12ccccc2",
+        "cc"
+      ],
+      [
+        "CN1Cc1cc3",
+        "OCOc3cc1"
+      ],
+      [
+        "c1c2OCOc2",
+        "ccc1CN1C"
+      ],
+      [
+        "5OCO",
+        "c5"
+      ],
+      [
+        "Nc2ccccc2",
+        "C"
+      ],
+      [
+        "1",
+        "CCC4"
+      ],
+      [
+        "2",
+        "c2scc"
+      ],
+      [
+        "3",
+        "CCCC"
+      ],
+      [
+        "3",
+        "c3nc"
+      ],
+      [
+        "F",
+        "C1"
+      ],
+      [
+        "N",
+        "CCCCN"
+      ],
+      [
+        "O",
+        "CCC"
+      ],
+      [
+        "c",
+        "nc"
+      ],
+      [
+        "c",
+        "o4"
+      ],
+      [
+        "n",
+        "5"
+      ],
+      [
+        "CC",
+        "N2CCCCC2"
+      ],
+      [
+        "CCC",
+        "NC2"
+      ],
+      [
+        "c1",
+        "ncc"
+      ],
+      [
+        "c1",
+        "onc"
+      ],
+      [
+        "c2",
+        "cccc1"
+      ],
+      [
+        "c1ccccc1",
+        "OCCN1C"
+      ],
+      [
+        "Cc2",
+        "cc1"
+      ],
+      [
+        "c3",
+        "nc1"
+      ],
+      [
+        "CN",
+        "CCCCCCNC1"
+      ],
+      [
+        "1C",
+        "c1c2c"
+      ],
+      [
+        "N1C",
+        "c1cc2c"
+      ],
+      [
+        "CCCC",
+        "NC2"
+      ],
+      [
+        "N3",
+        "CCCC"
+      ],
+      [
+        "1CC",
+        "CCC"
+      ],
+      [
+        "1CC",
+        "SC"
+      ],
+      [
+        "N1CC",
+        "Oc1ccccc1"
+      ],
+      [
+        "1CCCN1C",
+        "2"
+      ],
+      [
+        "C1CC",
+        "CCCNC"
+      ],
+      [
+        "c4",
+        "cc"
+      ],
+      [
+        "c4",
+        "scc"
+      ],
+      [
+        "c4",
+        "nnc"
+      ],
+      [
+        "c4",
+        "ccccc34"
+      ],
+      [
+        "CN1",
+        "CCCc1cn"
+      ],
+      [
+        "CO",
+        "CCN1CC"
+      ],
+      [
+        "Cc2cc",
+        "4c"
+      ],
+      [
+        "NCC",
+        "NC"
+      ],
+      [
+        "CN1CC",
+        "c1cnccc1"
+      ],
+      [
+        "ccccc4",
+        "3"
+      ],
+      [
+        "Cc4",
+        "c"
+      ],
+      [
+        "c2c",
+        "sc1"
+      ],
+      [
+        "ccc2",
+        "OCOc12"
+      ],
+      [
+        "n1",
+        "oc"
+      ],
+      [
+        "n1",
+        "cccn1"
+      ],
+      [
+        "NCCCC",
+        "CCCCCCN"
+      ],
+      [
+        "CS",
+        "1"
+      ],
+      [
+        "CCCCCC",
+        "N2"
+      ],
+      [
+        "c12",
+        "nnc"
+      ],
+      [
+        "c1cccc2",
+        "c1cccc2"
+      ],
+      [
+        "CN1CCC",
+        "N1CCCC1"
+      ],
+      [
+        "1Cc1ccc",
+        "nc1"
+      ],
+      [
+        "cs",
+        "4"
+      ],
+      [
+        "C1CCC",
+        "N1CCCN1C"
+      ],
+      [
+        "c5",
+        "nc"
+      ],
+      [
+        "c4c",
+        "sc"
+      ],
+      [
+        "1Cc1cc",
+        "3"
+      ],
+      [
+        "1CO",
+        "CCC"
+      ],
+      [
+        "c12cccc",
+        "c1cc"
+      ],
+      [
+        "Cc3cccc4",
+        "ccccc43"
+      ],
+      [
+        "N5",
+        "CCC"
+      ],
+      [
+        "cc2ccccc2",
+        "c1"
+      ],
+      [
+        "cc2ccccc2",
+        "cc1"
+      ],
+      [
+        "c1cc2OCOc2",
+        "cc1CN1C"
+      ],
+      [
+        "4CCCN4",
+        "C1"
+      ],
+      [
+        "CCCc4c",
+        "nn"
+      ],
+      [
+        "1c2ccccc2",
+        "c"
+      ],
+      [
+        "c1c2cccc",
+        "1C"
+      ],
+      [
+        "c2nc1",
+        "sc2"
+      ],
+      [
+        "Cc2cc1",
+        "ccc2"
+      ],
+      [
+        ")",
+        "\\"
+      ],
+      [
+        "1",
+        "cc"
+      ],
+      [
+        "1",
+        "c1ccccc1"
+      ],
+      [
+        "1",
+        "Cc2cc"
+      ],
+      [
+        "1",
+        "CCCc1ccccc1"
+      ],
+      [
+        "2",
+        "c2nc"
+      ],
+      [
+        "2",
+        "c3oc"
+      ],
+      [
+        "4",
+        "1"
+      ],
+      [
+        "C",
+        "N2"
+      ],
+      [
+        "F",
+        "c1cc"
+      ],
+      [
+        "F",
+        "c1c"
+      ],
+      [
+        "N",
+        "CCCNC"
+      ],
+      [
+        "c",
+        "nc3"
+      ],
+      [
+        "o",
+        "n4"
+      ],
+      [
+        "cc",
+        "c1cccc2"
+      ],
+      [
+        "c1",
+        "CN1C"
+      ],
+      [
+        "c1",
+        "Cn1cccn1"
+      ],
+      [
+        "c1",
+        "ncsc1"
+      ],
+      [
+        "c2",
+        "1"
+      ],
+      [
+        "c2",
+        "c1cc"
+      ],
+      [
+        "c1ccccc1",
+        "CCCN1CC"
+      ],
+      [
+        "Cc1ccccc1",
+        "CN1C"
+      ],
+      [
+        "Cc2",
+        "c3ccc"
+      ],
+      [
+        "Cc2",
+        "c3cc"
+      ],
+      [
+        "Cc2ccccc2",
+        "CN2CC"
+      ],
+      [
+        "c3",
+        "oc2"
+      ],
+      [
+        "2C",
+        "c3cc"
+      ],
+      [
+        "N1C",
+        "c1cc2OCOc2cc1"
+      ],
+      [
+        "ccccc3",
+        "1"
+      ],
+      [
+        "N1CC",
+        "N1CCOCC1"
+      ],
+      [
+        "c1cc",
+        "c2"
+      ],
+      [
+        "c1cc",
+        "2C"
+      ],
+      [
+        "3C",
+        "SC"
+      ],
+      [
+        "cc2",
+        "c1"
+      ],
+      [
+        "cc2",
+        "ccc1"
+      ],
+      [
+        "cc2",
+        "OCOc2cc1"
+      ],
+      [
+        "cc2",
+        "OCOc12"
+      ],
+      [
+        "cc2",
+        "OCOc21"
+      ],
+      [
+        "C1CC",
+        "CCCc2ccc"
+      ],
+      [
+        "CN1C",
+        "c1c"
+      ],
+      [
+        "CN1C",
+        "c1noc"
+      ],
+      [
+        "CCCCC",
+        "5"
+      ],
+      [
+        "Cc2ccc",
+        "4c"
+      ],
+      [
+        "CN1CC",
+        "O"
+      ],
+      [
+        "N1CCC",
+        "c1cn"
+      ],
+      [
+        "ccc2",
+        "ccccc12"
+      ],
+      [
+        "ccc2",
+        "OCO1"
+      ],
+      [
+        "ccc2",
+        "c1OCO2"
+      ],
+      [
+        "n1",
+        "nccc1"
+      ],
+      [
+        "n1",
+        "cccn"
+      ],
+      [
+        "CN2CC",
+        "OCC2"
+      ],
+      [
+        "NCCCC",
+        "CCCNC"
+      ],
+      [
+        "CS",
+        "CC1"
+      ],
+      [
+        "CN1Cc1ccccc1",
+        "Cn1nccc1"
+      ],
+      [
+        "Cc2c",
+        "n"
+      ],
+      [
+        "c3c",
+        "sc1"
+      ],
+      [
+        "SC",
+        "3"
+      ],
+      [
+        "c1cccc2",
+        "c1ccc"
+      ],
+      [
+        "NCCCCCC",
+        "NC2"
+      ],
+      [
+        "nn",
+        "4"
+      ],
+      [
+        "cc1C",
+        "l"
+      ],
+      [
+        "o1",
+        "c2"
+      ],
+      [
+        "s1",
+        "c2nc"
+      ],
+      [
+        "c12ccccc2",
+        "c"
+      ],
+      [
+        "c12ccccc2",
+        "ccc"
+      ],
+      [
+        "Cc1cccc3",
+        "ccccc31"
+      ],
+      [
+        "NCCCCCCCCC",
+        "N"
+      ],
+      [
+        "c1cc2OCOc2",
+        "cc1CN1CC"
+      ],
+      [
+        "c1ccnn",
+        "1Cc1ccccc1"
+      ],
+      [
+        "c1ncccc1CC",
+        "N1CC"
+      ],
+      [
+        "CC5",
+        "CCCCC5"
+      ],
+      [
+        "c1cs",
+        "2"
+      ],
+      [
+        "3CCCC",
+        "N3C"
+      ],
+      [
+        "c3nc1",
+        "sc3"
+      ],
+      [
+        "c2csc1",
+        "n2"
+      ],
+      [
+        "c3oc2",
+        "nn3"
+      ],
+      [
+        "c3csc1",
+        "n3"
+      ],
+      [
+        "1",
+        "4"
+      ],
+      [
+        "1",
+        "CCCN"
+      ],
+      [
+        "1",
+        "c2scc"
+      ],
+      [
+        "2",
+        "c3nnc"
+      ],
+      [
+        "3",
+        "c3scc"
+      ],
+      [
+        "4",
+        "N1CCC"
+      ],
+      [
+        "4",
+        "CCCN1"
+      ],
+      [
+        "4",
+        "CCCC4"
+      ],
+      [
+        "C",
+        "4"
+      ],
+      [
+        "C",
+        "N2C1"
+      ],
+      [
+        "C",
+        "n5"
+      ],
+      [
+        "O",
+        "2"
+      ],
+      [
+        "O",
+        "Cc2ccccc2"
+      ],
+      [
+        "c",
+        "o1"
+      ],
+      [
+        "o",
+        "c4"
+      ],
+      [
+        "CC",
+        "c4c"
+      ],
+      [
+        "cc",
+        "1CC"
+      ],
+      [
+        "CCC",
+        "N1CCCN1CC"
+      ],
+      [
+        "c1",
+        "sc"
+      ],
+      [
+        "c1",
+        "nnc"
+      ],
+      [
+        "c1",
+        "nn2"
+      ],
+      [
+        "N1",
+        "CCCCc1ccccc1"
+      ],
+      [
+        "N1",
+        "CCCCCCN"
+      ],
+      [
+        "C1",
+        "c2cc"
+      ],
+      [
+        "C1",
+        "c2nc"
+      ],
+      [
+        "c1ccccc1",
+        "CCCCN1CC"
+      ],
+      [
+        "c3",
+        "nnc1"
+      ],
+      [
+        "c3",
+        "occ"
+      ],
+      [
+        "2C",
+        "N2C"
+      ],
+      [
+        "1C",
+        "N2C"
+      ],
+      [
+        "1C",
+        "c1cccc3"
+      ],
+      [
+        "N1C",
+        "c1ccc2c"
+      ],
+      [
+        "1N",
+        "CCCCCCCCCCNC"
+      ],
+      [
+        "cc1",
+        "cccc2"
+      ],
+      [
+        "c1c",
+        "sc"
+      ],
+      [
+        "C1CC",
+        "c2cccc"
+      ],
+      [
+        "c4",
+        "ccc"
+      ],
+      [
+        "c4",
+        "occ"
+      ],
+      [
+        "CCCCC",
+        "c"
+      ],
+      [
+        "Cc2ccc",
+        "4ccccc4"
+      ],
+      [
+        "CN1",
+        "2"
+      ],
+      [
+        "ccccc1",
+        "Cn1nccc1"
+      ],
+      [
+        "CO",
+        "Cc2cc"
+      ],
+      [
+        "Cc2cc",
+        "4ccccc4"
+      ],
+      [
+        "NCC",
+        "N"
+      ],
+      [
+        "NCC",
+        "NC1"
+      ],
+      [
+        "CN1CC",
+        "c1cccnc1"
+      ],
+      [
+        "CCCN",
+        "4CCCC4"
+      ],
+      [
+        "Cc4",
+        "noc"
+      ],
+      [
+        "ccc2",
+        "OCOc21"
+      ],
+      [
+        "cccc2",
+        "ccc1"
+      ],
+      [
+        "NCCCC",
+        "CCCCN"
+      ],
+      [
+        "NCCCC",
+        "CCCCNC"
+      ],
+      [
+        "Cc1",
+        "c2cccc"
+      ],
+      [
+        "c3ccccc3",
+        "1"
+      ],
+      [
+        "Cc1cccc",
+        "n1"
+      ],
+      [
+        "c3c",
+        "ncc"
+      ],
+      [
+        "c3c",
+        "oc1"
+      ],
+      [
+        "C1CCCC",
+        "c2ccc"
+      ],
+      [
+        "sc",
+        "5"
+      ],
+      [
+        "c12",
+        "CCCCCC"
+      ],
+      [
+        "c2ccccc2c1",
+        "C"
+      ],
+      [
+        "N1Cc1ccccc1",
+        "Cn1cccn1"
+      ],
+      [
+        "c1cc2",
+        "ccc1C"
+      ],
+      [
+        "NCCCCCCN",
+        "CC1"
+      ],
+      [
+        "cs",
+        "c1"
+      ],
+      [
+        "c5",
+        "c"
+      ],
+      [
+        "Cc3c",
+        "nc"
+      ],
+      [
+        "c12c",
+        "oc"
+      ],
+      [
+        "1CCC",
+        "N1"
+      ],
+      [
+        "o1",
+        "nc"
+      ],
+      [
+        "NCCCCC",
+        "N1"
+      ],
+      [
+        "NCCCCC",
+        "NC1"
+      ],
+      [
+        "CN1Cc1cc",
+        "c3OCOc3c1"
+      ],
+      [
+        "c1c2ccccc2",
+        "c"
+      ],
+      [
+        "Cc1nc",
+        "n"
+      ],
+      [
+        "s1",
+        "c2"
+      ],
+      [
+        "c12cccc",
+        "c1ccc"
+      ],
+      [
+        "Cc3cccc4",
+        "ccccc34"
+      ],
+      [
+        "n1c2",
+        "C"
+      ],
+      [
+        "Cc1cccc3",
+        "c1cccc3"
+      ],
+      [
+        "c1ccncc1CC",
+        "N1CC"
+      ],
+      [
+        "1Cc1",
+        "ncsc1"
+      ],
+      [
+        "c1ccc2ccccc2c1",
+        "C"
+      ],
+      [
+        "n1nc2",
+        "oc1"
+      ],
+      [
+        "1Cc1cc3",
+        "ccccc3"
+      ],
+      [
+        "n1cccn",
+        "1Cc1c"
+      ],
+      [
+        "4N1CCC",
+        "4"
+      ],
+      [
+        "4CCCN1",
+        "4"
+      ],
+      [
+        "CCc4c",
+        "nccc4"
+      ],
+      [
+        "c1sc",
+        "nc1C"
+      ],
+      [
+        "c3nnc1",
+        "o3"
+      ],
+      [
+        "Cc2ccc4ccccc4",
+        "c2"
+      ],
+      [
+        "Cc2cc4ccccc4",
+        "cc2"
+      ],
+      [
+        "c3coc1",
+        "n3"
+      ],
+      [
+        "2",
+        "Cc1ccccc1"
+      ],
+      [
+        "2",
+        "Cc2ccccc2"
+      ],
+      [
+        "4",
+        "C1"
+      ],
+      [
+        "5",
+        "CCCN"
+      ],
+      [
+        "@",
+        "]("
+      ],
+      [
+        "O",
+        "CCN1CCOCC1"
+      ],
+      [
+        "S",
+        "1C"
+      ],
+      [
+        "S",
+        "1CC"
+      ],
+      [
+        "S",
+        "1C2"
+      ],
+      [
+        "c",
+        "n3"
+      ],
+      [
+        "n",
+        "ccc"
+      ],
+      [
+        "CC",
+        "N3CCC"
+      ],
+      [
+        "CC",
+        "NC2"
+      ],
+      [
+        "CC",
+        "c4ccccc4"
+      ],
+      [
+        "CCC",
+        "c5ccccc5"
+      ],
+      [
+        "c1",
+        "C"
+      ],
+      [
+        "c1",
+        "o2"
+      ],
+      [
+        "c1",
+        "oc2"
+      ],
+      [
+        "C1",
+        "2"
+      ],
+      [
+        "C1",
+        "c2csc"
+      ],
+      [
+        "C1",
+        "SC2"
+      ],
+      [
+        "c1ccccc1",
+        "N"
+      ],
+      [
+        "c3",
+        "n"
+      ],
+      [
+        "c3",
+        "oc1"
+      ],
+      [
+        "2N",
+        "CCCCCCCCCCNC"
+      ],
+      [
+        "CN",
+        "CC1"
+      ],
+      [
+        "1C",
+        "NC"
+      ],
+      [
+        "1C",
+        "OCC"
+      ],
+      [
+        "1C",
+        "c1cccc2c1cccc2"
+      ],
+      [
+        "N1C",
+        "c1ccc"
+      ],
+      [
+        "N1C",
+        "c1noc"
+      ],
+      [
+        "CCCC",
+        "c"
+      ],
+      [
+        "1CC",
+        "NC"
+      ],
+      [
+        "N1CC",
+        "c1cccnc1"
+      ],
+      [
+        "c1cc",
+        "c2ccc"
+      ],
+      [
+        "C1N",
+        "CCC"
+      ],
+      [
+        "C1N",
+        "CCCCC"
+      ],
+      [
+        "cc2",
+        "ccccc12"
+      ],
+      [
+        "ccc1",
+        "CCCCCC"
+      ],
+      [
+        "CCCCC",
+        "NC"
+      ],
+      [
+        "CCCCC",
+        "c2cc"
+      ],
+      [
+        "ccccc1",
+        "CN1CC"
+      ],
+      [
+        "ccccc1",
+        "Cn1cccn1"
+      ],
+      [
+        "c2ccccc2",
+        "NC"
+      ],
+      [
+        "Cc4",
+        "c5ccccc5"
+      ],
+      [
+        "N1CCC",
+        "N1CCCC1"
+      ],
+      [
+        "N1CCC",
+        "c1cnn"
+      ],
+      [
+        "Cc4ccccc4",
+        "Cn4cccn4"
+      ],
+      [
+        "n1",
+        "c2oc"
+      ],
+      [
+        "cccc2",
+        "ccccc12"
+      ],
+      [
+        "NCCCC",
+        "NC"
+      ],
+      [
+        "NCCCC",
+        "CCCCCCNC"
+      ],
+      [
+        "NCCCC",
+        "CCCCN1"
+      ],
+      [
+        "N4",
+        "CCCC4"
+      ],
+      [
+        "Cc1",
+        "c2ccc"
+      ],
+      [
+        "Cc1",
+        "c2cc"
+      ],
+      [
+        "CN1Cc1ccccc1",
+        "Cn1cccn1"
+      ],
+      [
+        "Cc2cccc",
+        "n2"
+      ],
+      [
+        "CCCCCC",
+        "NCC"
+      ],
+      [
+        "c12",
+        "scc"
+      ],
+      [
+        "COCC",
+        "N3CCOCC3"
+      ],
+      [
+        "c1cc2",
+        "CCCCC"
+      ],
+      [
+        "c1cc2",
+        "CCCCCC"
+      ],
+      [
+        "c1cc2",
+        "ccc1CCCCCC"
+      ],
+      [
+        "C3",
+        "O"
+      ],
+      [
+        "NCCC",
+        "N1"
+      ],
+      [
+        "cs",
+        "5"
+      ],
+      [
+        "C1CCC",
+        "c2ccc"
+      ],
+      [
+        "C1CCC",
+        "N1CCCN1CC"
+      ],
+      [
+        "c12c",
+        "sc"
+      ],
+      [
+        "c4ccccc4",
+        "3"
+      ],
+      [
+        "c2c1cccc2",
+        "Br"
+      ],
+      [
+        "c4c",
+        "oc"
+      ],
+      [
+        "NCCCCC",
+        "NC"
+      ],
+      [
+        "Cc2nc",
+        "n"
+      ],
+      [
+        "Cc4ccc",
+        "5OCOc5"
+      ],
+      [
+        "s1",
+        "cc"
+      ],
+      [
+        "s1",
+        "cc2C"
+      ],
+      [
+        "s1",
+        "cnc"
+      ],
+      [
+        "Cc4cc",
+        "5OCOc5"
+      ],
+      [
+        "c12cccc",
+        "c1c"
+      ],
+      [
+        "CCCCCCCCC",
+        "NC"
+      ],
+      [
+        "1Cc1c",
+        "scn1"
+      ],
+      [
+        "N1Cc1cc",
+        "3"
+      ],
+      [
+        "N1Cc1cc",
+        "c3c"
+      ],
+      [
+        "Cc1cccc3",
+        "ccccc13"
+      ],
+      [
+        "c1sc2",
+        "nc1C"
+      ],
+      [
+        "NCCCCCCCCC",
+        "NC"
+      ],
+      [
+        "c1ccnn",
+        "1Cc1c"
+      ],
+      [
+        "c1ncccc1CC",
+        "N1C"
+      ],
+      [
+        "onc1",
+        "CN1C"
+      ],
+      [
+        "onc1",
+        "CN1CC"
+      ],
+      [
+        "1Cc1c2ccccc2",
+        "ccc1"
+      ],
+      [
+        "c1ccnn1Cc1ccccc1",
+        "CN1C"
+      ],
+      [
+        "1Cc1cc3ccccc3",
+        "cc1"
+      ],
+      [
+        "c3oc1",
+        "nn3"
+      ],
+      [
+        "CCCCCc2cc",
+        "c1cc2"
+      ],
+      [
+        "Cc4ccc5OCOc5",
+        "c4"
+      ],
+      [
+        "Cc4cc5OCOc5",
+        "cc4"
+      ],
+      [
+        "1",
+        "2CCCN2"
+      ],
+      [
+        "1",
+        "c2c"
+      ],
+      [
+        "1",
+        "OCC"
+      ],
+      [
+        "1",
+        "c1scc"
+      ],
+      [
+        "1",
+        "c2occ"
+      ],
+      [
+        "2",
+        "3"
+      ],
+      [
+        "2",
+        "CCCCNC"
+      ],
+      [
+        "3",
+        "CCOCC3"
+      ],
+      [
+        "4",
+        "CSC"
+      ],
+      [
+        "4",
+        "c4scc"
+      ],
+      [
+        "5",
+        "C2"
+      ],
+      [
+        "5",
+        "ccccc5"
+      ],
+      [
+        "@",
+        "]"
+      ],
+      [
+        "C",
+        "N21"
+      ],
+      [
+        "C",
+        "c5c"
+      ],
+      [
+        "N",
+        "CC2"
+      ],
+      [
+        "N",
+        "c3c"
+      ],
+      [
+        "O",
+        "4"
+      ],
+      [
+        "O",
+        "CCN"
+      ],
+      [
+        "S",
+        "1"
+      ],
+      [
+        "S",
+        "C1"
+      ],
+      [
+        "c",
+        "ncc"
+      ],
+      [
+        "n",
+        "c4"
+      ],
+      [
+        "o",
+        "cc1"
+      ],
+      [
+        "s",
+        "cc1"
+      ],
+      [
+        "CC",
+        "c3"
+      ],
+      [
+        "CC",
+        "c4"
+      ],
+      [
+        "cc",
+        "ncc1"
+      ],
+      [
+        "CCC",
+        "O"
+      ],
+      [
+        "c1",
+        "CN1CC"
+      ],
+      [
+        "c1",
+        "oc"
+      ],
+      [
+        "N1",
+        "CCCCCCNCC"
+      ],
+      [
+        "C1",
+        "c2cccc"
+      ],
+      [
+        "c1cccc",
+        "4"
+      ],
+      [
+        "c1cccc",
+        "2C"
+      ],
+      [
+        "c1ccccc1",
+        "CCC"
+      ],
+      [
+        "c1ccccc1",
+        "Cl"
+      ],
+      [
+        "c1ccccc1",
+        "SC"
+      ],
+      [
+        "c1ccccc1",
+        "CCN1C"
+      ],
+      [
+        "Cc2",
+        "scc"
+      ],
+      [
+        "Cc2",
+        "c3cccc"
+      ],
+      [
+        "c3",
+        "c2ccc"
+      ],
+      [
+        "2N",
+        "CCCC"
+      ],
+      [
+        "2N",
+        "CCCCNC"
+      ],
+      [
+        "2N",
+        "CCNC"
+      ],
+      [
+        "2N",
+        "CCCCCNC"
+      ],
+      [
+        "2C",
+        "N3C"
+      ],
+      [
+        "CN",
+        "CCCC1"
+      ],
+      [
+        "CN",
+        "CCCCCC1"
+      ],
+      [
+        "CN",
+        "3CCOCC3"
+      ],
+      [
+        "1C",
+        "c1cnccc1"
+      ],
+      [
+        "1C",
+        "c1c2cc"
+      ],
+      [
+        "CCCC",
+        "c1cc"
+      ],
+      [
+        "Cc3",
+        "scc"
+      ],
+      [
+        "Cc3",
+        "c4cc"
+      ],
+      [
+        "1CC",
+        "N1CCOCC1"
+      ],
+      [
+        "CCC3",
+        "CC"
+      ],
+      [
+        "CCC3",
+        "CCC"
+      ],
+      [
+        "CCC3",
+        "CCCC"
+      ],
+      [
+        "N1CC",
+        "N"
+      ],
+      [
+        "N1CC",
+        "c1cnccc1"
+      ],
+      [
+        "c1cc",
+        "c2cccc"
+      ],
+      [
+        "cc1",
+        "CCCN1CC"
+      ],
+      [
+        "COC",
+        "c3cncc"
+      ],
+      [
+        "ccc",
+        "6"
+      ],
+      [
+        "cc2",
+        "cc"
+      ],
+      [
+        "cc2",
+        "nc1"
+      ],
+      [
+        "c1c",
+        "oc"
+      ],
+      [
+        "c1c",
+        "o2"
+      ],
+      [
+        "c1c",
+        "scn1"
+      ],
+      [
+        "c1c",
+        "sc2"
+      ],
+      [
+        "c4",
+        "nc1"
+      ],
+      [
+        "c4",
+        "oc"
+      ],
+      [
+        "c4",
+        "oc1"
+      ],
+      [
+        "c4",
+        "csc1"
+      ],
+      [
+        "c4",
+        "c1cccc4"
+      ],
+      [
+        "CCCCC",
+        "c1cc2"
+      ],
+      [
+        "CCCCC",
+        "c4ccc"
+      ],
+      [
+        "Cc2ccc",
+        "4OCOc4"
+      ],
+      [
+        "Cl",
+        "c1c"
+      ],
+      [
+        "CO",
+        "c3cc"
+      ],
+      [
+        "Cc2cc",
+        "4OCOc4"
+      ],
+      [
+        "c1ccccc1C",
+        "n1cccn1"
+      ],
+      [
+        "NCC",
+        "N2"
+      ],
+      [
+        "CN1CC",
+        "c1ccccc1"
+      ],
+      [
+        "CN1CC",
+        "OCC"
+      ],
+      [
+        "CCCN",
+        "4C"
+      ],
+      [
+        "Cc4",
+        "ncs"
+      ],
+      [
+        "ccc2",
+        "3"
+      ],
+      [
+        "ccc2",
+        "cccc1"
+      ],
+      [
+        "C1CN",
+        "CC"
+      ],
+      [
+        "n1",
+        "c2scc"
+      ],
+      [
+        "n1",
+        "cc2cc"
+      ],
+      [
+        "cccc2",
+        "3"
+      ],
+      [
+        "cccc2",
+        "c1"
+      ],
+      [
+        "cccc2",
+        "c1cccc2"
+      ],
+      [
+        "cccc3",
+        "2"
+      ],
+      [
+        "NCCCC",
+        "N1"
+      ],
+      [
+        "NCCCC",
+        "CCC1"
+      ],
+      [
+        "NCCCC",
+        "CCCN1"
+      ],
+      [
+        "Cc1c",
+        "4ccccc4"
+      ],
+      [
+        "C1CCCC",
+        "NCC"
+      ],
+      [
+        "C1CCCC",
+        "CCCNC"
+      ],
+      [
+        "c12",
+        "ccccc1"
+      ],
+      [
+        "ccc3",
+        "4"
+      ],
+      [
+        "c1cccc2",
+        "cccc"
+      ],
+      [
+        "c1cccc2",
+        "c1c"
+      ],
+      [
+        "c1cccc2",
+        "ccccc12"
+      ],
+      [
+        "c1cccc2",
+        "c1cccc2C"
+      ],
+      [
+        "nn",
+        "n3"
+      ],
+      [
+        "ncs",
+        "1"
+      ],
+      [
+        "CCOCC",
+        "5"
+      ],
+      [
+        "Br",
+        "c1cc2c"
+      ],
+      [
+        "c5",
+        "cc"
+      ],
+      [
+        "o1",
+        "c2nnc1"
+      ],
+      [
+        "NCCCCC",
+        "N"
+      ],
+      [
+        "c1c2",
+        "CCCCC"
+      ],
+      [
+        "1Cc1cc",
+        "c3ccccc3c1"
+      ],
+      [
+        "1CO",
+        "CCN"
+      ],
+      [
+        "c1c2ccccc2",
+        "ccc1"
+      ],
+      [
+        "c1cc2ccccc2",
+        "c"
+      ],
+      [
+        "1CCc1ccccc1",
+        "Cl"
+      ],
+      [
+        "s1",
+        "cc2nc1"
+      ],
+      [
+        "Cc4cc",
+        "5ccccc5"
+      ],
+      [
+        "cccc1C",
+        "N1C"
+      ],
+      [
+        "N1Cc1cc",
+        "c2OCOc2c1"
+      ],
+      [
+        "c1ccc2cc",
+        "1C"
+      ],
+      [
+        "1c",
+        "nc"
+      ],
+      [
+        "1Cc1",
+        "c3c"
+      ],
+      [
+        "c4c3cccc4",
+        "Br"
+      ],
+      [
+        "NCCCCCCCCC",
+        "N1"
+      ],
+      [
+        "CCCc4c",
+        "n"
+      ],
+      [
+        "c2cc1",
+        "ccc2"
+      ],
+      [
+        "cccn",
+        "5"
+      ],
+      [
+        "cccn",
+        "c4"
+      ],
+      [
+        "CN1Cc1cc3",
+        "c"
+      ],
+      [
+        "1c2ccccc2",
+        "cc1C"
+      ],
+      [
+        "c2nc1",
+        "oc2"
+      ],
+      [
+        "c1ccn",
+        "cc1C"
+      ],
+      [
+        "CC5",
+        "CCOCC5"
+      ],
+      [
+        "c1cs",
+        "3"
+      ],
+      [
+        "1Cc1cc3",
+        "c"
+      ],
+      [
+        "c1ccc2",
+        "C"
+      ],
+      [
+        "c1ccnn1Cc1ccccc1",
+        "CN1CC"
+      ],
+      [
+        "Cn5",
+        "nccc"
+      ],
+      [
+        "Cn5",
+        "cccn5"
+      ],
+      [
+        "1Cc1cccc3",
+        "c1cccc3"
+      ],
+      [
+        "1Cc1cccc3",
+        "ccccc13"
+      ],
+      [
+        "5CCCN",
+        "5C2"
+      ],
+      [
+        "S1C2",
+        "c3cccc"
+      ],
+      [
+        "c3n",
+        "c1cs3"
+      ],
+      [
+        "N1Cc1cc3",
+        "c"
+      ],
+      [
+        "CCc3",
+        "noc"
+      ],
+      [
+        "CCc4",
+        "cccnc4"
+      ],
+      [
+        "c1csc2",
+        "n1"
+      ],
+      [
+        "c4nc1",
+        "sc4"
+      ],
+      [
+        "c4oc1",
+        "nn4"
+      ],
+      [
+        "c4csc1",
+        "n4"
+      ],
+      [
+        "Cc2ccc4OCOc4",
+        "c2"
+      ],
+      [
+        "Cc2cc4OCOc4",
+        "cc2"
+      ],
+      [
+        "Cc4ncs",
+        "c4"
+      ],
+      [
+        "n1c2scc",
+        "1C"
+      ],
+      [
+        "Cc4cc5ccccc5",
+        "cc4"
+      ],
+      [
+        "Cn5nccc",
+        "5"
+      ]
+    ]
+  }
+}
